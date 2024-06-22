@@ -1,0 +1,866 @@
+|main
+clk => clk.IN1
+D1 << contador:comb_8.port2
+D2 << contador:comb_8.port3
+D3 << contador:comb_8.port4
+D4 << contador:comb_8.port5
+a << contador:comb_8.port6
+b << contador:comb_8.port7
+c << contador:comb_8.port8
+d << contador:comb_8.port9
+e << contador:comb_8.port10
+f << contador:comb_8.port11
+g << contador:comb_8.port12
+buttom => buttom.IN1
+Alta => Alta.IN2
+Media => Media.IN2
+Baixa => Baixa.IN2
+Solo => Solo.IN1
+Umidade => Umidade.IN1
+Temperatura => Temperatura.IN1
+Erro << sistema_irrigacao:comb_3.port6
+Alarme << sistema_irrigacao:comb_3.port7
+Ve << sistema_irrigacao:comb_3.port8
+col[0] << matrizleds:comb_9.port1
+col[1] << matrizleds:comb_9.port1
+col[2] << matrizleds:comb_9.port1
+col[3] << matrizleds:comb_9.port1
+col[4] << matrizleds:comb_9.port1
+l0 << matrizleds:comb_9.port2
+l1 << matrizleds:comb_9.port3
+l2 << matrizleds:comb_9.port4
+l3 << matrizleds:comb_9.port5
+l4 << matrizleds:comb_9.port6
+l5 << matrizleds:comb_9.port7
+l6 << matrizleds:comb_9.port8
+seletor => seletor.IN1
+
+
+|main|sistema_irrigacao:comb_3
+Alta => Alta.IN1
+Media => Media.IN1
+Baixa => Baixa.IN1
+Solo => Solo.IN1
+Umidade => Umidade.IN1
+Temperatura => Temperatura.IN1
+Erro <= caixa_agua:dut_caixa.Erro
+Alarme <= Alarme.DB_MAX_OUTPUT_PORT_TYPE
+Ve <= caixa_agua:dut_caixa.Ve
+Gotejamento <= irrigacao:dut_irrigacao.Gotejamento
+Aspersao <= irrigacao:dut_irrigacao.Aspersao
+
+
+|main|sistema_irrigacao:comb_3|caixa_agua:dut_caixa
+Alta => AltaMedia_not.IN0
+Alta => Todos_Nivel.IN0
+Media => MediaBaixa_not.IN0
+Media => Todos_Nivel.IN1
+Media => saida_caixa.IN1
+Media => AltaMedia_not.IN1
+Baixa => Todos_Nivel.IN2
+Baixa => MediaBaixa_not.IN1
+Baixa => saida_alarme.IN1
+Erro <= saida_erro.DB_MAX_OUTPUT_PORT_TYPE
+Alarme <= saida_alarme.DB_MAX_OUTPUT_PORT_TYPE
+Ve <= Nivel_Erro.DB_MAX_OUTPUT_PORT_TYPE
+Caixa <= saida_caixa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|sistema_irrigacao:comb_3|irrigacao:dut_irrigacao
+Solo => Solo_completo.IN1
+Solo => SnotUm.IN0
+Umidade => SnotUm.IN1
+Umidade => TCaixa_notUm.IN1
+Temperatura => TCaixa_not.IN0
+Temperatura => T_notCaixa.IN0
+Caixa => T_notCaixa.IN1
+Caixa => TCaixa_not.IN1
+Alarme => Solo_completo.IN2
+Alarme => saida_gotejamento.IN2
+Aspersao <= Solo_completo.DB_MAX_OUTPUT_PORT_TYPE
+Gotejamento <= saida_gotejamento.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock
+T => T.IN24
+clk => _.IN1
+clk1 <= Frequencia.DB_MAX_OUTPUT_PORT_TYPE
+frequencia_display <= flipflopt:comb_35.port2
+Q21 <= flipflopt:comb_43.port2
+Gotejamento => sr1.IN0
+Aspersao => sr1.IN1
+frequencia_matriz <= flipflopt:comb_31.port2
+
+
+|main|clock:SaidaClock|flipflopt:comb_3
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_5
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_7
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_9
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_11
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_13
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_15
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_17
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_19
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_21
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_23
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_25
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_27
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_29
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_31
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_33
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_35
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_37
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_39
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_41
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_43
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_45
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_47
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopt:comb_49
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopd:comb_51
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|clock:SaidaClock|flipflopd:comb_52
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:comb_8
+clk1 => ~NO_FANOUT~
+frequencia_display => frequencia_display.IN2
+D1 <= demuxdisplay:comb_78.port2
+D2 <= demuxdisplay:comb_78.port3
+D3 <= demuxdisplay:comb_78.port4
+D4 <= demuxdisplay:comb_78.port5
+a <= display7seg:comb_77.port4
+b <= display7seg:comb_77.port5
+c <= display7seg:comb_77.port6
+d <= display7seg:comb_77.port7
+e <= display7seg:comb_77.port8
+f <= display7seg:comb_77.port9
+g <= display7seg:comb_77.port10
+Gotejamento => gs.IN0
+Gotejamento => ag.IN0
+Gotejamento => WideOr0.IN0
+Gotejamento => WideOr1.IN0
+Gotejamento => f1.IN0
+Gotejamento => h2.IN0
+Aspersao => asn.IN0
+Aspersao => ag.IN1
+Aspersao => WideOr0.IN1
+Aspersao => WideOr1.IN1
+Aspersao => f1.IN1
+Aspersao => h2.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN0
+buttom => comb.IN1
+buttom => comb.IN0
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN0
+buttom => comb.IN0
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+buttom => comb.IN1
+Q21 => WideAnd0.IN2
+Sespecifica => gs.IN1
+Sespecifica => WideOr0.IN2
+Sespecifica => comb.IN1
+Sespecifica => comb.IN1
+Sespecifica => WideOr1.IN2
+Sespecifica => comb.IN1
+Sespecifica => comb.IN1
+Sespecifica => asn.IN1
+Sespecifica => snag.IN1
+
+
+|main|contador:comb_8|contadorunidade:UnidadeSegundos
+clk1 => clk1.IN4
+clk2 <= saidaclock2.DB_MAX_OUTPUT_PORT_TYPE
+qUnidadedeSegundos[0] <= flipflopjk:Us1.port3
+qUnidadedeSegundos[1] <= flipflopjk:Us2.port3
+qUnidadedeSegundos[2] <= flipflopjk:Us3.port3
+qUnidadedeSegundos[3] <= flipflopjk:Us4.port3
+clearUs[0] => clearUs[0].IN1
+clearUs[1] => clearUs[1].IN1
+clearUs[2] => clearUs[2].IN1
+clearUs[3] => clearUs[3].IN1
+
+
+|main|contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us2
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us3
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us4
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezena:DezenadeSegundos
+clk2 => clk2.IN4
+clk3 <= saidaclock3.DB_MAX_OUTPUT_PORT_TYPE
+qDezenadeSegundos[0] <= flipflopjk:D1.port3
+qDezenadeSegundos[1] <= flipflopjk:D2.port3
+qDezenadeSegundos[2] <= flipflopjk:D3.port3
+qDezenadeSegundos[3] <= flipflopjk:D4.port3
+presetDs[0] => presetDs[0].IN1
+presetDs[1] => presetDs[1].IN1
+presetDs[2] => presetDs[2].IN1
+presetDs[3] => presetDs[3].IN1
+clearDs[0] => clearDs[0].IN1
+clearDs[1] => clearDs[1].IN1
+clearDs[2] => clearDs[2].IN1
+clearDs[3] => clearDs[3].IN1
+
+
+|main|contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D1
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D3
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D4
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidademin:UnidadedeMinutos
+clk3 => clk3.IN4
+clk4 <= saidaclock2.DB_MAX_OUTPUT_PORT_TYPE
+qUnidadedeMinutos[0] <= flipflopjk:Us1.port3
+qUnidadedeMinutos[1] <= flipflopjk:Us2.port3
+qUnidadedeMinutos[2] <= flipflopjk:Us3.port3
+qUnidadedeMinutos[3] <= flipflopjk:Us4.port3
+presetUm[0] => presetUm[0].IN1
+presetUm[1] => presetUm[1].IN1
+presetUm[2] => presetUm[2].IN1
+presetUm[3] => presetUm[3].IN1
+clearUm[0] => clearUm[0].IN1
+clearUm[1] => clearUm[1].IN1
+clearUm[2] => clearUm[2].IN1
+clearUm[3] => clearUm[3].IN1
+
+
+|main|contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us2
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us3
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us4
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezenamin:DezenadeMinutos
+clk4 => clk4.IN2
+qDezenadeMinutos[0] <= <GND>
+qDezenadeMinutos[1] <= <GND>
+qDezenadeMinutos[2] <= flipflopjk:comb_5.port3
+qDezenadeMinutos[3] <= flipflopjk:SS.port3
+presetDm[0] => ~NO_FANOUT~
+presetDm[1] => ~NO_FANOUT~
+presetDm[2] => presetDm[2].IN1
+presetDm[3] => presetDm[3].IN1
+clearDm[0] => ~NO_FANOUT~
+clearDm[1] => ~NO_FANOUT~
+clearDm[2] => clearDm[2].IN1
+clearDm[3] => clearDm[3].IN1
+
+
+|main|contador:comb_8|contadordezenamin:DezenadeMinutos|flipflopjk:comb_5
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|contadordezenamin:DezenadeMinutos|flipflopjk:SS
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|flipflopjk:comb_72
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|flipflopjk:comb_75
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|contador:comb_8|muxdisplay:comb_76
+q30 => WideAnd2.IN0
+q30 => WideAnd3.IN0
+q30 => WideAnd6.IN0
+q30 => WideAnd7.IN0
+q30 => WideAnd10.IN0
+q30 => WideAnd11.IN0
+q30 => WideAnd14.IN0
+q30 => WideAnd15.IN0
+q30 => WideAnd0.IN0
+q30 => WideAnd1.IN0
+q30 => WideAnd4.IN0
+q30 => WideAnd5.IN0
+q30 => WideAnd8.IN0
+q30 => WideAnd9.IN0
+q30 => WideAnd12.IN0
+q30 => WideAnd13.IN0
+q31 => WideAnd1.IN1
+q31 => WideAnd3.IN1
+q31 => WideAnd5.IN1
+q31 => WideAnd7.IN1
+q31 => WideAnd9.IN1
+q31 => WideAnd11.IN1
+q31 => WideAnd13.IN1
+q31 => WideAnd15.IN1
+q31 => WideAnd0.IN1
+q31 => WideAnd2.IN1
+q31 => WideAnd4.IN1
+q31 => WideAnd6.IN1
+q31 => WideAnd8.IN1
+q31 => WideAnd10.IN1
+q31 => WideAnd12.IN1
+q31 => WideAnd14.IN1
+qd => WideAnd0.IN2
+qc => WideAnd4.IN2
+qb => WideAnd8.IN2
+qa => WideAnd12.IN2
+q1 => WideAnd1.IN2
+q2 => WideAnd5.IN2
+q3 => WideAnd9.IN2
+q4 => WideAnd13.IN2
+q10 => WideAnd2.IN2
+q11 => WideAnd6.IN2
+q12 => WideAnd10.IN2
+q13 => WideAnd14.IN2
+q21 => WideAnd3.IN2
+q22 => WideAnd7.IN2
+q23 => WideAnd11.IN2
+q24 => WideAnd15.IN2
+m0 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+m1 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+m2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+m3 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:comb_8|display7seg:comb_77
+qd => WideAnd0.IN0
+qd => WideAnd4.IN0
+qd => WideAnd5.IN0
+qd => WideAnd7.IN0
+qc => s1.IN0
+qc => comb.IN1
+qc => WideAnd2.IN0
+qc => WideAnd3.IN0
+qc => s10.IN0
+qc => WideAnd6.IN0
+qc => WideAnd0.IN1
+qc => WideAnd1.IN0
+qc => WideAnd4.IN1
+qc => WideAnd5.IN1
+qc => s13.IN0
+qc => WideAnd7.IN1
+qb => s4.IN0
+qb => WideAnd1.IN1
+qb => WideAnd2.IN1
+qb => s12.IN0
+qb => s13.IN1
+qb => WideAnd6.IN1
+qb => comb.IN1
+qb => s5.IN0
+qb => WideAnd4.IN2
+qb => WideAnd3.IN1
+qb => s10.IN1
+qb => WideAnd7.IN2
+qa => WideAnd0.IN2
+qa => s5.IN1
+qa => WideAnd2.IN2
+qa => WideAnd4.IN3
+qa => comb.IN1
+qa => WideAnd5.IN2
+qa => s12.IN1
+qa => WideAnd6.IN2
+qa => s1.IN1
+qa => s4.IN1
+qa => WideAnd1.IN2
+qa => WideAnd3.IN2
+a <= comb.DB_MAX_OUTPUT_PORT_TYPE
+b <= comb.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideAnd1.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+e <= comb.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+g <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador:comb_8|demuxdisplay:comb_78
+c1 => comb.IN0
+c1 => comb.IN0
+c1 => comb.IN0
+c1 => comb.IN0
+c2 => comb.IN1
+c2 => comb.IN1
+c2 => comb.IN1
+c2 => comb.IN1
+D1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+D4 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizleds:comb_9
+frequencia_display => frequencia_display.IN1
+col[0] <> demux1x5:comb_4.port1
+col[0] <> decoder_linhas_irrigacao:comb_5.port2
+col[0] <> decoder_linhas_caixa:comb_6.port3
+col[1] <> demux1x5:comb_4.port1
+col[1] <> decoder_linhas_irrigacao:comb_5.port2
+col[1] <> decoder_linhas_caixa:comb_6.port3
+col[2] <> demux1x5:comb_4.port1
+col[2] <> decoder_linhas_irrigacao:comb_5.port2
+col[2] <> decoder_linhas_caixa:comb_6.port3
+col[3] <> demux1x5:comb_4.port1
+col[3] <> decoder_linhas_irrigacao:comb_5.port2
+col[3] <> decoder_linhas_caixa:comb_6.port3
+col[4] <> demux1x5:comb_4.port1
+col[4] <> decoder_linhas_irrigacao:comb_5.port2
+col[4] <> decoder_linhas_caixa:comb_6.port3
+l0 <= mux_linhas:comb_7.port0
+l1 <= mux_linhas:comb_7.port1
+l2 <= mux_linhas:comb_7.port2
+l3 <= mux_linhas:comb_7.port3
+l4 <= mux_linhas:comb_7.port4
+l5 <= mux_linhas:comb_7.port5
+l6 <= mux_linhas:comb_7.port6
+Alta => Alta.IN1
+Media => Media.IN1
+Baixa => Baixa.IN1
+Aspersao => Aspersao.IN1
+Gotejamento => Gotejamento.IN1
+seletor => seletor.IN1
+
+
+|main|matrizleds:comb_9|contadormatriz:comb_3
+frequencia_display => frequencia_display.IN4
+q[0] <= flipflopjk:D.port3
+q[1] <= flipflopjk:C.port3
+q[2] <= flipflopjk:B.port3
+q[3] <= flipflopjk:A.port3
+
+
+|main|matrizleds:comb_9|contadormatriz:comb_3|flipflopjk:D
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|matrizleds:comb_9|contadormatriz:comb_3|flipflopjk:C
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|matrizleds:comb_9|contadormatriz:comb_3|flipflopjk:B
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|matrizleds:comb_9|contadormatriz:comb_3|flipflopjk:A
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+preset => q.IN0
+clear => q~reg0.ACLR
+clear => q.IN1
+
+
+|main|matrizleds:comb_9|demux1x5:comb_4
+d => comb.IN1
+d => comb.IN1
+d => comb.IN1
+d => comb.IN1
+d => comb.IN1
+o[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+s[0] => WideAnd4.IN0
+s[0] => WideAnd3.IN0
+s[0] => WideAnd2.IN0
+s[0] => WideAnd1.IN0
+s[0] => WideAnd0.IN0
+s[1] => WideAnd2.IN1
+s[1] => WideAnd3.IN1
+s[1] => WideAnd4.IN1
+s[1] => WideAnd1.IN1
+s[1] => WideAnd0.IN1
+s[2] => WideAnd1.IN2
+s[2] => WideAnd3.IN2
+s[2] => WideAnd4.IN2
+s[2] => WideAnd2.IN2
+s[2] => WideAnd0.IN2
+s[3] => ~NO_FANOUT~
+
+
+|main|matrizleds:comb_9|decoder_linhas_irrigacao:comb_5
+aspersao => aspersao_notgotejameno.IN0
+aspersao => comb.IN0
+aspersao => not_aspersao_gotejameto.IN0
+gotejamento => not_aspersao_gotejameto.IN1
+gotejamento => comb.IN1
+gotejamento => aspersao_notgotejameno.IN1
+col[0] => ~NO_FANOUT~
+col[1] => WideOr0.IN0
+col[1] => saida_col2.IN1
+col[1] => saida_col3.IN0
+col[2] => WideOr0.IN1
+col[2] => saida_g1.IN1
+col[2] => saida_col3.IN1
+col[2] => saida_g2.IN1
+col[3] => WideOr0.IN2
+col[4] => WideOr0.IN3
+l0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizleds:comb_9|decoder_linhas_caixa:comb_6
+alto => comb.IN1
+alto => desenho_baixo1.IN0
+alto => desenho_baixo3.IN0
+alto => WideAnd0.IN0
+alto => WideAnd1.IN0
+medio => desenho_baixo0.IN0
+medio => WideOr1.IN1
+medio => desenho_baixo3.IN1
+medio => desenho_critico3.IN0
+medio => WideAnd0.IN1
+medio => WideAnd1.IN1
+baixo => desenho_baixo0.IN1
+baixo => desenho_baixo1.IN1
+baixo => WideOr1.IN2
+baixo => desenho_critico3.IN1
+baixo => WideAnd0.IN2
+baixo => WideAnd1.IN2
+baixo => saida_l5.IN1
+col[0] => col0_1.IN0
+col[0] => WideOr2.IN0
+col[1] => col0_1.IN1
+col[1] => WideOr2.IN1
+col[2] => WideOr0.IN0
+col[2] => WideOr2.IN2
+col[3] => WideOr0.IN1
+col[3] => WideOr2.IN3
+col[4] => WideOr0.IN2
+col[4] => desenho_linha3.IN1
+l0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= WideAnd1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|matrizleds:comb_9|mux_linhas:comb_7
+l0 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= or2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= or3.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= or4.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= or5.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= or6.DB_MAX_OUTPUT_PORT_TYPE
+l0_rega => s0.IN0
+l1_rega => s2.IN0
+l2_rega => and4.IN0
+l3_rega => and6.IN0
+l4_rega => and8.IN0
+l5_rega => and10.IN0
+l6_rega => and12.IN0
+l0_caixa => s1.IN0
+l1_caixa => s3.IN0
+l2_caixa => and5.IN0
+l3_caixa => and7.IN0
+l4_caixa => and9.IN0
+l5_caixa => and11.IN0
+l6_caixa => and13.IN0
+sel => s0.IN1
+sel => s2.IN1
+sel => and4.IN1
+sel => and6.IN1
+sel => and8.IN1
+sel => and10.IN1
+sel => and12.IN1
+sel => s1.IN1
+sel => s3.IN1
+sel => and5.IN1
+sel => and7.IN1
+sel => and9.IN1
+sel => and11.IN1
+sel => and13.IN1
+
+

@@ -1,0 +1,14 @@
+module muxdisplay(us, ds, um, dm, s0, s1);
+	input us, ds, um, dm;
+	output s0, s1;
+	
+	// s0
+	or(s0, um, dm);
+	
+	// s1
+	or(s1, ds, dm);
+
+	
+	
+
+endmodule 

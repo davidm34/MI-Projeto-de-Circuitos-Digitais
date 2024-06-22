@@ -1,0 +1,8 @@
+module display7seg(qd, qc, qb, qa, a, b, c, d, e, f, g);
+	input qd, qc, qb, qa;
+	output a, b, c, d, e, f, g;
+	
+	
+
+
+endmodule 

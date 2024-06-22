@@ -1,0 +1,147 @@
+|main
+Alta => Alta.IN2
+Media => Media.IN2
+Baixa => Baixa.IN2
+Solo => Solo.IN1
+Umidade => Umidade.IN1
+Temperatura => Temperatura.IN1
+Erro <= Erro.DB_MAX_OUTPUT_PORT_TYPE
+Alarme <= Alarme.DB_MAX_OUTPUT_PORT_TYPE
+Ve <= caixa_agua:dut_caixa.Ve
+Caixa <= Caixa.DB_MAX_OUTPUT_PORT_TYPE
+Gotejamento <= Gotejamento.DB_MAX_OUTPUT_PORT_TYPE
+Aspersao <= Aspersao.DB_MAX_OUTPUT_PORT_TYPE
+saida_multiplex <= multiplex:comb_3.port3
+saida_multiplex2 <= multiplex2:comb_4.port3
+saida_multiplex3 <= multiplex3:comb_5.port3
+saida_multiplex4 <= multiplex4:comb_6.port3
+saida_multiplex5 <= multiplex5:comb_7.port3
+saida_multiplex6 <= multiplex6:comb_8.port3
+saida_multiplex7 <= multiplex7:comb_9.port3
+seletor => seletor.IN7
+D1 <= display_caixa:dut_matriz7.D1
+D2 <= display_caixa:dut_matriz7.D2
+D3 <= display_caixa:dut_matriz7.D3
+
+
+|main|caixa_agua:dut_caixa
+Alta => AltaMedia_not.IN0
+Alta => Todos_Nivel.IN0
+Media => MediaBaixa_not.IN0
+Media => Todos_Nivel.IN1
+Media => saida_caixa.IN1
+Media => AltaMedia_not.IN1
+Baixa => Todos_Nivel.IN2
+Baixa => MediaBaixa_not.IN1
+Baixa => saida_alarme.IN1
+Erro <= saida_erro.DB_MAX_OUTPUT_PORT_TYPE
+Alarme <= saida_alarme.DB_MAX_OUTPUT_PORT_TYPE
+Ve <= Nivel_Erro.DB_MAX_OUTPUT_PORT_TYPE
+Caixa <= saida_caixa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|irrigacao:dut_irrigacao
+Solo => Solo_completo.IN1
+Solo => SnotUm.IN0
+Umidade => SnotUm.IN1
+Umidade => TCaixa_notUm.IN1
+Temperatura => TCaixa_not.IN0
+Temperatura => T_notCaixa.IN0
+Caixa => T_notCaixa.IN1
+Caixa => TCaixa_not.IN1
+Alarme => Solo_completo.IN2
+Alarme => saida_gotejamento.IN2
+Aspersao <= Solo_completo.DB_MAX_OUTPUT_PORT_TYPE
+Gotejamento <= saida_gotejamento.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|display_caixa:dut_matriz7
+Alta => PS3.IN0
+Media => PS3.IN1
+Media => PS2.IN0
+Baixa => PS3.IN2
+Baixa => PS2.IN1
+Baixa => PS4.IN0
+Erro => PS5.IN1
+Erro => PS6.IN1
+Erro => PS3.IN3
+Erro => PS2.IN2
+Erro => PS4.IN1
+D1 <= <VCC>
+D2 <= <VCC>
+D3 <= <VCC>
+A <= PS5.DB_MAX_OUTPUT_PORT_TYPE
+G <= PS2.DB_MAX_OUTPUT_PORT_TYPE
+D <= PS6.DB_MAX_OUTPUT_PORT_TYPE
+B <= PS6.DB_MAX_OUTPUT_PORT_TYPE
+F <= PS6.DB_MAX_OUTPUT_PORT_TYPE
+E <= PS6.DB_MAX_OUTPUT_PORT_TYPE
+C <= PS6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|display:dut_matriz_irriga
+Aspersao => s2.IN0
+Aspersao => s1.IN0
+Gotejamento => s1.IN1
+Gotejamento => s2.IN1
+D <= s1.DB_MAX_OUTPUT_PORT_TYPE
+B <= s2.DB_MAX_OUTPUT_PORT_TYPE
+A <= <GND>
+
+
+|main|multiplex:comb_3
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex2:comb_4
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex3:comb_5
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex4:comb_6
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex5:comb_7
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex6:comb_8
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|multiplex7:comb_9
+A => u2.IN0
+B => u3.IN0
+S => u3.IN1
+S => u2.IN1
+X <= u4.DB_MAX_OUTPUT_PORT_TYPE
+
+

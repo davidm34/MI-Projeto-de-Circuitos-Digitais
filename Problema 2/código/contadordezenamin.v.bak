@@ -1,0 +1,21 @@
+module contadordezenamin(clk4);
+	input clk4;
+	
+	wire j21, j22, j23, j24;
+	wire k21, k22, k23, k24;
+	wire q21, q22, q23, q24;
+	
+	flipflopjk(j21, k21, clk4, q21);
+	flipflopjk(j22, k22, clk4, q22);
+	flipflopjk(j23, k23, clk4, q23);
+	flipflopjk(j24, k21, clk4, q24);
+	
+	and(j21, 0);
+	and(j22, 0);
+	and(j23, 0);
+	and(j24, 1);
+	
+	and(k23, 1);
+	and(k24, 1);
+	
+endmodule 

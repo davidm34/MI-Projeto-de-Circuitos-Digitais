@@ -1,0 +1,32 @@
+module contador(T,clk, rst, Q0);
+	input T, clk, rst, Q0;
+	
+	// Flip Flop D
+	wire qa, qan, qb, qbn;
+	wire da, db;
+	
+	// Flip Flop JK
+	wire sa, san, sb, sbn, sc, scn, sd, sdn;
+	wire ja, ka, jb, kb, jc, kc, jd, kd;
+	
+	// Frequencia
+	wire f;
+
+	clock(T, clk, Q0);
+
+	flipflopd(Q26, da, qa, qan, rst);
+	flipflopd(Q26, db, qb, qbn, rst);
+	and DA(da, qan, qbn);
+	and DB(db, qa);
+	or Frequencia(f, qa, qbn);
+	
+	flipflopjk(ja, ka, f, qa, qan);
+	flipflopjk(jb, kb, f, qb, qbn);
+	flipflopjk(jc, kc, f, qc, qcn);
+	flipflopjk(jd, kd, f, qd, qdn);
+	
+	
+endmodule 	
+
+
+

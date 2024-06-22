@@ -1,0 +1,36 @@
+module display7seg(Alta, Media, Baixa, D1, D2, D3, A, G, D);
+	input Alta, Media, Baixa;
+	output D1, D2, D3, A, G, D;
+	wire S15, S18, S21, S22, S23, S24, S25, S26;
+		
+	// S15 = Aspersao
+	// S18 = Gotejamento
+		
+	not SS0(D1, 1'B0);
+	
+	not SS1(D2, 1'B0);
+	
+	not SS2(D3, 1'B0);
+	
+	// A, G, D
+	
+	// Saida Alta = Alta.Media.Baixa.Erro'
+	and PS3(S21, S4, S7);
+	or PS5(S24,S21, !S7);
+	not SS3(A, S24);
+	
+	// Saida Media = Media.Baixa.Erro'
+	and PS2(S22, Media, Baixa, S7);
+	not SS4(G, S22);
+	
+	// Saida Baixa = Baixa.Erro'
+	and PS4(S23, Baixa, S7);
+	or PS6(S25, S23, !S7);
+	and juntos(S26, !S15, S25);
+	not SS5(D, S26);
+	
+	
+	// Saida Vazia = Alta'.Media'.Baixa'.Erro'
+	
+
+endmodule 

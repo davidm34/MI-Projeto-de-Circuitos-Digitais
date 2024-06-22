@@ -1,0 +1,32 @@
+module clock(T, Q0, Q1);
+	input T, Q0;
+	output Q1;
+	
+	flipflopt(T, !Q0, Q1);
+	flipflopt(T, !Q1, Q2);
+	flipflopt(T, !Q2, Q3);
+	flipflopt(T, !Q3, Q4);
+	flipflopt(T, !Q4, Q5);
+	flipflopt(T, !Q5, Q6);
+	flipflopt(T, !Q6, Q7);
+	flipflopt(T, !Q7, Q8);
+	flipflopt(T, !Q8, Q9);
+	flipflopt(T, !Q9, Q10);
+	flipflopt(T, !Q10, Q11);
+	flipflopt(T, !Q11, Q12);
+	flipflopt(T, !Q12, Q13);
+	flipflopt(T, !Q13, Q14);
+	flipflopt(T, !Q14, Q15);
+	flipflopt(T, !Q15, Q16);
+	flipflopt(T, !Q16, Q17);
+	flipflopt(T, !Q17, Q18);
+	flipflopt(T, !Q18, Q19);
+	flipflopt(T, !Q19, Q20);
+	flipflopt(T, !Q20, Q21);
+	flipflopt(T, !Q21, Q22);
+	flipflopt(T, !Q22, Q23);
+	flipflopt(T, !Q23, Q24);
+	flipflopt(T, !Q24, Q25);
+	flipflopt(T, !Q25, Q26);
+
+endmodule 

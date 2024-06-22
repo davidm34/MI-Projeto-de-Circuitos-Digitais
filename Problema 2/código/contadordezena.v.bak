@@ -1,0 +1,11 @@
+module contadordezena(clk);
+	wire j1, j2, j3, j4, k1, k2, k3, k4;
+	wire q1, q2, q3, q4;
+
+	flipflopjk D1(j1, k1, clk, q1);
+	flipflopjk D2(j2, k2, clk, q2);
+	flipflopjk D3(j3, k1, clk, q3);
+	flipflopjk D4(j4, k1, clk, q4);
+
+
+endmodule

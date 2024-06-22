@@ -1,0 +1,51 @@
+module contadorunidade(clk, a, b, c, d, e, f, g);
+	input T, clk, rst;
+	
+	// Flip Flop JK
+	wire qa, qb, qc, qd;
+	wire ja, ka, jb, kb, jc, kc, jd, kd;
+	
+	flipflopjk D(jd, kd, clk, qd);
+	flipflopjk C(jc, kc, clk, qc);
+	flipflopjk B(jb, kb, clk, qb);
+	flipflopjk A(ja, ka, clk, qa);
+	
+	// Jd e Kd
+	 
+	// JD = QC'.QB'.QA'
+	and JD(jd, !qc, !qb, !qa);
+	
+	// KD = QA'
+	or(kd, !qa);
+	
+	// Jc e Kc
+	
+	// JC = QD.QA'
+	and JC(jc, qd, !qa);
+	
+	// KC = QB'.QA'
+	and KC(kc, !qb, !qa);
+	
+	
+	// Jb e Kb
+	
+	// JB = QA'(QC + QD)
+	or(F1, qc, qd);
+	and JB(jb, !qa, F1);
+	
+	// KB = QA'
+	or (kb, !qa);
+
+	// Ja e Ka
+	
+	// Ja = 1
+	or (ja, 1);
+	
+	// Ka = 1
+	or (ka, 1);
+		
+	
+endmodule 	
+
+
+

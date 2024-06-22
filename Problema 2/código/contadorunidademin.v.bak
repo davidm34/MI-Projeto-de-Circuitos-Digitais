@@ -1,0 +1,51 @@
+module contadorunidademin(clk3, clk4);
+	input clk3;
+	output clk4;
+	
+	wire j10, j11, j12, j13;
+	wire k10, k11, k12, k13;
+	wire q10, q11, q12, q13;
+	
+	flipflopjk(j10, k10, clk3, q10);
+	flipflopjk(j11, k11, clk3, q11);
+	flipflopjk(j12, k12, clk3, q12);	
+	flipflopjk(j13, k13, clk3, q13);	
+	
+	// J10 e K10
+	 
+	// J10 = Q11'.Q12'.Q13'
+	and J10(j10, !q11, !q12, !q13);
+	
+	// K10 = Q13'
+	or(k10, !q13);
+	
+	// J11 e K11
+	
+	// J11 = Q10.Q13'
+	and J11(j11, q10, !q13);
+	
+	// K11 = Q12'.Q13'
+	and K11(k11, !q12, !q13);
+	
+	// J12 e K12
+	
+	// J12 = Q13'(Q11 + Q10)
+	or(F1, q11, q10);
+	and J12(j12, !q13, F1);
+	
+	// K12 = Q13'
+	or (k12, !q13);
+
+	// J13 e K13
+	
+	// J13 = 1
+	or (j13, 1);
+	
+	// K13 = 1
+	or (k13, 1);
+		
+	and saidaclock4(clk4, q10, !q11, !q12, q13);
+
+	contadordezena(clk4, a, b, c, d, e, f, g);
+	
+endmodule 

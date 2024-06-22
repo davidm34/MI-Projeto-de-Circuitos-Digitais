@@ -1,0 +1,111 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 09:38:35  May 23, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		main_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:38:35  MAY 23, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name VERILOG_FILE contador.v
+set_global_assignment -name VERILOG_FILE flipflopt.v
+set_global_assignment -name VERILOG_FILE main.v
+set_global_assignment -name VERILOG_FILE flipflopd.v
+set_global_assignment -name VERILOG_FILE clock.v
+set_global_assignment -name VERILOG_FILE flipflopjk.v
+set_global_assignment -name VERILOG_FILE display7seg.v
+set_location_assignment PIN_12 -to clk
+set_global_assignment -name VERILOG_FILE contadordezena.v
+set_global_assignment -name VERILOG_FILE output_files/displaydezena.v
+set_global_assignment -name VERILOG_FILE contadorunidade.v
+set_global_assignment -name VERILOG_FILE flipflopdisplay.v
+set_location_assignment PIN_90 -to a
+set_location_assignment PIN_70 -to b
+set_location_assignment PIN_41 -to c
+set_location_assignment PIN_98 -to d
+set_location_assignment PIN_100 -to e
+set_location_assignment PIN_92 -to f
+set_location_assignment PIN_39 -to g
+set_global_assignment -name VERILOG_FILE contadorunidademin.v
+set_global_assignment -name VERILOG_FILE contadordezenamin.v
+set_global_assignment -name VERILOG_FILE muxdisplay.v
+set_location_assignment PIN_88 -to D1
+set_location_assignment PIN_66 -to D2
+set_location_assignment PIN_68 -to D3
+set_location_assignment PIN_37 -to D4
+set_global_assignment -name VERILOG_FILE output_files/demuxdisplay.v
+set_global_assignment -name VERILOG_FILE leveltopulse.v
+set_global_assignment -name VERILOG_FILE sistema_irrigacao.v
+set_global_assignment -name VERILOG_FILE caixa_agua.v
+set_global_assignment -name VERILOG_FILE irrigacao.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VERILOG_FILE matrizleds.v
+set_global_assignment -name VERILOG_FILE contadormatriz.v
+set_global_assignment -name VERILOG_FILE decoder_linhas_irrigacao.v
+set_global_assignment -name VERILOG_FILE decoder_linhas_caixa.v
+set_global_assignment -name VERILOG_FILE mux_linhas.v
+set_global_assignment -name VERILOG_FILE demux1x5.v
+set_location_assignment PIN_50 -to buttom
+set_location_assignment PIN_38 -to Solo
+set_location_assignment PIN_40 -to Temperatura
+set_location_assignment PIN_42 -to Umidade
+set_location_assignment PIN_35 -to Baixa
+set_location_assignment PIN_33 -to Media
+set_location_assignment PIN_30 -to Alta
+set_location_assignment PIN_89 -to l6
+set_location_assignment PIN_91 -to l5
+set_location_assignment PIN_81 -to l4
+set_location_assignment PIN_87 -to l3
+set_location_assignment PIN_84 -to l2
+set_location_assignment PIN_83 -to l1
+set_location_assignment PIN_85 -to l0
+set_location_assignment PIN_97 -to col[0]
+set_location_assignment PIN_99 -to col[1]
+set_location_assignment PIN_95 -to col[2]
+set_location_assignment PIN_82 -to col[3]
+set_location_assignment PIN_78 -to col[4]
+set_location_assignment PIN_76 -to Ve
+set_location_assignment PIN_86 -to Erro
+set_location_assignment PIN_74 -to Alarme
+set_location_assignment PIN_34 -to seletor

@@ -1,0 +1,337 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1|q'
+Slack : -4.777
+TNS   : -21.681
+
+Type  : Setup 'contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2|q'
+Slack : -3.497
+TNS   : -22.426
+
+Type  : Setup 'contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1|q'
+Slack : -2.674
+TNS   : -14.299
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_31|Q'
+Slack : -1.939
+TNS   : -7.299
+
+Type  : Setup 'Alta'
+Slack : -1.859
+TNS   : -6.786
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_35|Q'
+Slack : -1.682
+TNS   : -2.905
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_41|Q'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_37|Q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_3|Q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_9|Q'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_13|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_17|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_21|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_25|Q'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_29|Q'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_33|Q'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_23|Q'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_15|Q'
+Slack : 0.819
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_11|Q'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_5|Q'
+Slack : 0.918
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_7|Q'
+Slack : 1.128
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_27|Q'
+Slack : 1.257
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_39|Q'
+Slack : 1.273
+TNS   : 0.000
+
+Type  : Setup 'clock:SaidaClock|flipflopt:comb_19|Q'
+Slack : 1.348
+TNS   : 0.000
+
+Type  : Setup 'clk'
+Slack : 2.938
+TNS   : 0.000
+
+Type  : Hold 'Alta'
+Slack : -9.328
+TNS   : -24.783
+
+Type  : Hold 'contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2|q'
+Slack : -7.690
+TNS   : -28.193
+
+Type  : Hold 'contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1|q'
+Slack : -7.344
+TNS   : -18.205
+
+Type  : Hold 'contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1|q'
+Slack : -6.410
+TNS   : -14.804
+
+Type  : Hold 'clk'
+Slack : -2.992
+TNS   : -2.992
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_35|Q'
+Slack : -2.929
+TNS   : -2.929
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_31|Q'
+Slack : -2.124
+TNS   : -2.124
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_19|Q'
+Slack : -1.402
+TNS   : -1.402
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_39|Q'
+Slack : -1.327
+TNS   : -1.327
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_27|Q'
+Slack : -1.311
+TNS   : -1.311
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_7|Q'
+Slack : -1.182
+TNS   : -1.182
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_5|Q'
+Slack : -0.972
+TNS   : -0.972
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_11|Q'
+Slack : -0.879
+TNS   : -0.879
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_15|Q'
+Slack : -0.873
+TNS   : -0.873
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_23|Q'
+Slack : -0.872
+TNS   : -0.872
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_29|Q'
+Slack : -0.523
+TNS   : -0.523
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_33|Q'
+Slack : -0.523
+TNS   : -0.523
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_13|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_17|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_21|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_25|Q'
+Slack : -0.521
+TNS   : -0.521
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_37|Q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_3|Q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_9|Q'
+Slack : -0.520
+TNS   : -0.520
+
+Type  : Hold 'clock:SaidaClock|flipflopt:comb_41|Q'
+Slack : 1.640
+TNS   : 0.000
+
+Type  : Recovery 'contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1|q'
+Slack : -6.364
+TNS   : -28.569
+
+Type  : Recovery 'contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1|q'
+Slack : -5.967
+TNS   : -22.713
+
+Type  : Recovery 'contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2|q'
+Slack : -5.815
+TNS   : -30.392
+
+Type  : Recovery 'Alta'
+Slack : -1.465
+TNS   : -5.860
+
+Type  : Removal 'Alta'
+Slack : 1.411
+TNS   : 0.000
+
+Type  : Removal 'contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1|q'
+Slack : 2.226
+TNS   : 0.000
+
+Type  : Removal 'contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2|q'
+Slack : 2.700
+TNS   : 0.000
+
+Type  : Removal 'contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1|q'
+Slack : 4.322
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Alta'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_11|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_13|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_15|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_17|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_19|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_21|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_23|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_25|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_27|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_29|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_31|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_33|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_35|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_37|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_39|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_3|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_41|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_5|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_7|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock:SaidaClock|flipflopt:comb_9|Q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'contador:comb_8|contadordezena:DezenadeSegundos|flipflopjk:D2|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'contador:comb_8|contadorunidademin:UnidadedeMinutos|flipflopjk:Us1|q'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

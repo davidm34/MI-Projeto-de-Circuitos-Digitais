@@ -1,0 +1,17 @@
+module flipflopd(clk, d, q, qb, rst);
+	input clk, d, rst;
+	output reg q, qb;
+	
+	always @(posedge clk) 
+			if (rst) 
+			begin
+				q = 1'b0;
+				qb = ~q;
+			end
+			else
+			begin 
+				q = d; 
+				qb = ~q;
+			end
+endmodule 	
+ 

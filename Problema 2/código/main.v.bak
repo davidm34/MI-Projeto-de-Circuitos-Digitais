@@ -1,0 +1,7 @@
+module main(T,clk, rst, Q0);
+	input T,clk, rst, Q0;
+	
+	contador(T, clk, rst, Q0);
+
+
+endmodule 

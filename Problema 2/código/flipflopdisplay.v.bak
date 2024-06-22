@@ -1,0 +1,52 @@
+module flipflopdisplay(T, clk, rst, D1, D2, D3, D4);
+	input T, clk, rst;
+	output D1, D2, D3, D4;
+	wire Q24;
+
+	// Flip Flop D
+	wire sa, san, sb, sbn;
+	wire da, db;
+	
+	
+	// Frequencia
+	wire frequency;
+	 
+	clock(T, clk, Q24);
+
+	flipflopd(Q24, da, sa, san, rst);
+	flipflopd(Q24, db, sb, sbn, rst);
+	and DA(da, san, sbn);
+	and DB(db, sa);
+	or Frequencia(frequency, sa, sbn);
+
+	flipflopjk A(jd1, kd1, frequency, qd1);
+	flipflopjk B(jd2, kd2, frequency, qd2);
+	flipflopjk C(jd3, kd3, frequency, qd3);
+	flipflopjk D(jd4, kd4, frequency, qd4);
+	
+	// J1, J2, J3, J4 
+	and(jd1, 1);
+	and(jd2, 1);
+	and(jd3, 1);
+	and(jd4, 1);
+	
+	// K1 
+	not(kd1, qd4);
+	
+	// K2
+	not(kd2, qd1);
+	
+	// K3
+	not(kd3, qd2);
+	
+	// K4
+	not(kd4, qd3);
+	
+	// D1, D2, D3, D4
+	not(D1, !qd1);
+	not(D2, !qd2);
+	not(D3, !qd3);
+	not(D4, !qd4);
+	
+endmodule 
+
