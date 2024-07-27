@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sat Jun 15 07:58:14 2024
+Sun Jun 23 17:28:01 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Jun 15 07:58:14 2024       ;
+; Analysis & Synthesis Status ; Successful - Sun Jun 23 17:28:01 2024       ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; main                                        ;
 ; Top-level Entity Name       ; main                                        ;
@@ -160,34 +160,34 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v                  ;         ;
-; flipflopt.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopt.v                 ;         ;
-; main.v                           ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v                      ;         ;
-; flipflopd.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopd.v                 ;         ;
-; clock.v                          ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v                     ;         ;
-; flipflopjk.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopjk.v                ;         ;
-; display7seg.v                    ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v               ;         ;
-; contadordezena.v                 ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v            ;         ;
-; contadorunidade.v                ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v           ;         ;
-; contadorunidademin.v             ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidademin.v        ;         ;
-; contadordezenamin.v              ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezenamin.v         ;         ;
-; muxdisplay.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v                ;         ;
-; output_files/demuxdisplay.v      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/demuxdisplay.v ;         ;
-; sistema_irrigacao.v              ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/sistema_irrigacao.v         ;         ;
-; caixa_agua.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/caixa_agua.v                ;         ;
-; irrigacao.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/irrigacao.v                 ;         ;
-; matrizleds.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v                ;         ;
-; contadormatriz.v                 ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/contadormatriz.v            ;         ;
-; decoder_linhas_irrigacao.v       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_irrigacao.v  ;         ;
-; decoder_linhas_caixa.v           ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v      ;         ;
-; mux_linhas.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/mux_linhas.v                ;         ;
-; demux1x5.v                       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/PBL2Flores/demux1x5.v                  ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v                  ;         ;
+; flipflopt.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopt.v                 ;         ;
+; main.v                           ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v                      ;         ;
+; flipflopd.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopd.v                 ;         ;
+; clock.v                          ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v                     ;         ;
+; flipflopjk.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopjk.v                ;         ;
+; display7seg.v                    ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v               ;         ;
+; contadordezena.v                 ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v            ;         ;
+; contadorunidade.v                ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v           ;         ;
+; contadorunidademin.v             ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidademin.v        ;         ;
+; contadordezenamin.v              ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezenamin.v         ;         ;
+; muxdisplay.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v                ;         ;
+; output_files/demuxdisplay.v      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/demuxdisplay.v ;         ;
+; sistema_irrigacao.v              ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/sistema_irrigacao.v         ;         ;
+; caixa_agua.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/caixa_agua.v                ;         ;
+; irrigacao.v                      ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/irrigacao.v                 ;         ;
+; matrizleds.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v                ;         ;
+; contadormatriz.v                 ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadormatriz.v            ;         ;
+; decoder_linhas_irrigacao.v       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_irrigacao.v  ;         ;
+; decoder_linhas_caixa.v           ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v      ;         ;
+; mux_linhas.v                     ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/mux_linhas.v                ;         ;
+; demux1x5.v                       ; yes             ; User Verilog HDL File  ; C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/demux1x5.v                  ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------+
@@ -511,256 +511,256 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Jun 15 07:58:03 2024
+    Info: Processing started: Sun Jun 23 17:27:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file contador.v
-    Info (12023): Found entity 1: contador File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 1
+    Info (12023): Found entity 1: contador File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flipflopt.v
-    Info (12023): Found entity 1: flipflopt File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopt.v Line: 1
+    Info (12023): Found entity 1: flipflopt File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopt.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flipflopd.v
-    Info (12023): Found entity 1: flipflopd File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopd.v Line: 1
+    Info (12023): Found entity 1: flipflopd File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopd.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock.v
-    Info (12023): Found entity 1: clock File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 1
+    Info (12023): Found entity 1: clock File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flipflopjk.v
-    Info (12023): Found entity 1: flipflopjk File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopjk.v Line: 1
+    Info (12023): Found entity 1: flipflopjk File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopjk.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file display7seg.v
-    Info (12023): Found entity 1: display7seg File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 1
+    Info (12023): Found entity 1: display7seg File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadordezena.v
-    Info (12023): Found entity 1: contadordezena File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v Line: 1
+    Info (12023): Found entity 1: contadordezena File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/displaydezena.v
-    Info (12023): Found entity 1: displaydezena File: C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/displaydezena.v Line: 1
+    Info (12023): Found entity 1: displaydezena File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/displaydezena.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadorunidade.v
-    Info (12023): Found entity 1: contadorunidade File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v Line: 1
+    Info (12023): Found entity 1: contadorunidade File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flipflopdisplay.v
-    Info (12023): Found entity 1: flipflopdisplay File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 1
+    Info (12023): Found entity 1: flipflopdisplay File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadorunidademin.v
-    Info (12023): Found entity 1: contadorunidademin File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidademin.v Line: 1
+    Info (12023): Found entity 1: contadorunidademin File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidademin.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadordezenamin.v
-    Info (12023): Found entity 1: contadordezenamin File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezenamin.v Line: 1
+    Info (12023): Found entity 1: contadordezenamin File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezenamin.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxdisplay.v
-    Info (12023): Found entity 1: muxdisplay File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 1
+    Info (12023): Found entity 1: muxdisplay File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/demuxdisplay.v
-    Info (12023): Found entity 1: demuxdisplay File: C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/demuxdisplay.v Line: 1
+    Info (12023): Found entity 1: demuxdisplay File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/demuxdisplay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file leveltopulse.v
-    Info (12023): Found entity 1: leveltopulse File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 1
+    Info (12023): Found entity 1: leveltopulse File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sistema_irrigacao.v
-    Info (12023): Found entity 1: sistema_irrigacao File: C:/Users/david/OneDrive/Documentos/PBL2Flores/sistema_irrigacao.v Line: 1
+    Info (12023): Found entity 1: sistema_irrigacao File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/sistema_irrigacao.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file caixa_agua.v
-    Info (12023): Found entity 1: caixa_agua File: C:/Users/david/OneDrive/Documentos/PBL2Flores/caixa_agua.v Line: 1
+    Info (12023): Found entity 1: caixa_agua File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/caixa_agua.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file irrigacao.v
-    Info (12023): Found entity 1: irrigacao File: C:/Users/david/OneDrive/Documentos/PBL2Flores/irrigacao.v Line: 1
+    Info (12023): Found entity 1: irrigacao File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/irrigacao.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matrizleds.v
-    Info (12023): Found entity 1: matrizleds File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 1
+    Info (12023): Found entity 1: matrizleds File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadormatriz.v
-    Info (12023): Found entity 1: contadormatriz File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadormatriz.v Line: 1
+    Info (12023): Found entity 1: contadormatriz File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadormatriz.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_linhas_irrigacao.v
-    Info (12023): Found entity 1: decoder_linhas_irrigacao File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_irrigacao.v Line: 1
+    Info (12023): Found entity 1: decoder_linhas_irrigacao File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_irrigacao.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_linhas_caixa.v
-    Info (12023): Found entity 1: decoder_linhas_caixa File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at mux_linhas.v(23): ignored dangling comma in List of Port Connections File: C:/Users/david/OneDrive/Documentos/PBL2Flores/mux_linhas.v Line: 23
+    Info (12023): Found entity 1: decoder_linhas_caixa File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at mux_linhas.v(23): ignored dangling comma in List of Port Connections File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/mux_linhas.v Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file mux_linhas.v
-    Info (12023): Found entity 1: mux_linhas File: C:/Users/david/OneDrive/Documentos/PBL2Flores/mux_linhas.v Line: 2
+    Info (12023): Found entity 1: mux_linhas File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/mux_linhas.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file demux1x5.v
-    Info (12023): Found entity 1: demux1x5 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/demux1x5.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(40): created implicit net for "gs" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(42): created implicit net for "asn" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 42
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(44): created implicit net for "ag" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 44
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(45): created implicit net for "snag" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 45
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(49): created implicit net for "gas" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 49
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(63): created implicit net for "asgs" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 63
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(67): created implicit net for "ags" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 67
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(79): created implicit net for "gnsa" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 79
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(92): created implicit net for "f1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 92
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(102): created implicit net for "new_clock" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 102
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(122): created implicit net for "h1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 122
-Warning (10236): Verilog HDL Implicit Net warning at contador.v(123): created implicit net for "h2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 123
-Warning (10236): Verilog HDL Implicit Net warning at main.v(12): created implicit net for "Sespecifica" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at main.v(14): created implicit net for "frequencia_matriz" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(5): created implicit net for "Q1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(6): created implicit net for "Q2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(7): created implicit net for "Q3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(8): created implicit net for "Q4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(9): created implicit net for "Q5" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(10): created implicit net for "Q6" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 10
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(11): created implicit net for "Q7" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 11
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(12): created implicit net for "Q8" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 12
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(13): created implicit net for "Q9" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(14): created implicit net for "Q10" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(15): created implicit net for "Q11" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(16): created implicit net for "Q12" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(17): created implicit net for "Q13" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(18): created implicit net for "Q14" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 18
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(20): created implicit net for "Q16" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(22): created implicit net for "Q18" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(23): created implicit net for "Q19" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(24): created implicit net for "Q20" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 24
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(26): created implicit net for "Q22" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 26
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(27): created implicit net for "Q23" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 27
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(28): created implicit net for "Q24" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(38): created implicit net for "sr" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 38
-Warning (10236): Verilog HDL Implicit Net warning at clock.v(39): created implicit net for "sr1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(7): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(10): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 10
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(13): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(21): created implicit net for "s4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(24): created implicit net for "s5" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 24
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(27): created implicit net for "s6" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 27
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(40): created implicit net for "s7" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(43): created implicit net for "s8" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 43
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(46): created implicit net for "s9" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 46
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(54): created implicit net for "s10" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 54
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(62): created implicit net for "s11" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 62
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(65): created implicit net for "s12" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 65
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(68): created implicit net for "s13" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 68
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(76): created implicit net for "s14" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 76
-Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(79): created implicit net for "s15" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/display7seg.v Line: 79
-Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(6): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/displaydezena.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(7): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/displaydezena.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(23): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/displaydezena.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at contadorunidade.v(32): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v Line: 32
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "jd1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "kd1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "qd1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "jd2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "kd2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "qd2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "jd3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "kd3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "qd3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "jd4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "kd4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "qd4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(17): created implicit net for "t1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/flipflopdisplay.v Line: 17
-Warning (10236): Verilog HDL Implicit Net warning at contadorunidademin.v(33): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidademin.v Line: 33
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(6): created implicit net for "s0" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(7): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(8): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(9): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 9
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(13): created implicit net for "s4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(14): created implicit net for "s5" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 14
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(15): created implicit net for "s6" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 15
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(16): created implicit net for "s7" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 16
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(20): created implicit net for "s8" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(21): created implicit net for "s9" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(22): created implicit net for "s10" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 22
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(23): created implicit net for "s11" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 23
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(27): created implicit net for "s12" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 27
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(28): created implicit net for "s13" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 28
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(29): created implicit net for "s14" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(30): created implicit net for "s15" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/muxdisplay.v Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "q0" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "q0n" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "rst" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "d1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "q1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "q1n" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at contadormatriz.v(34): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadormatriz.v Line: 34
-Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(11): created implicit net for "desenho_baixo0" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v Line: 11
-Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(30): created implicit net for "col0_1_2_3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v Line: 30
-Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(47): created implicit net for "desenho_erro" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v Line: 47
-Critical Warning (10846): Verilog HDL Instantiation warning at contadordezenamin.v(14): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezenamin.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(129): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 129
-Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(130): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 130
-Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(140): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 140
-Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(142): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 142
-Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(144): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 144
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(8): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(5): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 5
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(6): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 6
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(7): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 7
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(8): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 8
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(9): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(10): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 10
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(11): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 11
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(12): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(13): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 13
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(14): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 14
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(15): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(16): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 16
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(17): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 17
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(18): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(19): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(20): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 20
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(21): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(22): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 22
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(23): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 23
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(24): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 24
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(25): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 25
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(26): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 26
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(27): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 27
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(28): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 28
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(34): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 34
-Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(35): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 35
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(16): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 16
-Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(13): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 13
-Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(15): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 15
-Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(17): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 17
-Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(19): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(21): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(18): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at leveltopulse.v(5): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 5
-Critical Warning (10846): Verilog HDL Instantiation warning at leveltopulse.v(6): instance has no name File: C:/Users/david/OneDrive/Documentos/PBL2Flores/leveltopulse.v Line: 6
+    Info (12023): Found entity 1: demux1x5 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/demux1x5.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(40): created implicit net for "gs" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(42): created implicit net for "asn" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(44): created implicit net for "ag" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(45): created implicit net for "snag" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(49): created implicit net for "gas" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(63): created implicit net for "asgs" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(67): created implicit net for "ags" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 67
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(79): created implicit net for "gnsa" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 79
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(92): created implicit net for "f1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 92
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(102): created implicit net for "new_clock" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 102
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(122): created implicit net for "h1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 122
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(123): created implicit net for "h2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 123
+Warning (10236): Verilog HDL Implicit Net warning at main.v(12): created implicit net for "Sespecifica" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at main.v(14): created implicit net for "frequencia_matriz" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(5): created implicit net for "Q1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(6): created implicit net for "Q2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(7): created implicit net for "Q3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(8): created implicit net for "Q4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(9): created implicit net for "Q5" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(10): created implicit net for "Q6" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(11): created implicit net for "Q7" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(12): created implicit net for "Q8" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(13): created implicit net for "Q9" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(14): created implicit net for "Q10" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(15): created implicit net for "Q11" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(16): created implicit net for "Q12" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(17): created implicit net for "Q13" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(18): created implicit net for "Q14" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(20): created implicit net for "Q16" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(22): created implicit net for "Q18" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(23): created implicit net for "Q19" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(24): created implicit net for "Q20" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(26): created implicit net for "Q22" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(27): created implicit net for "Q23" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(28): created implicit net for "Q24" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(38): created implicit net for "sr" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at clock.v(39): created implicit net for "sr1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(7): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(10): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(13): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(21): created implicit net for "s4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(24): created implicit net for "s5" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(27): created implicit net for "s6" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(40): created implicit net for "s7" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(43): created implicit net for "s8" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(46): created implicit net for "s9" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(54): created implicit net for "s10" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(62): created implicit net for "s11" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(65): created implicit net for "s12" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(68): created implicit net for "s13" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 68
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(76): created implicit net for "s14" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 76
+Warning (10236): Verilog HDL Implicit Net warning at display7seg.v(79): created implicit net for "s15" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/display7seg.v Line: 79
+Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(6): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/displaydezena.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(7): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/displaydezena.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at displaydezena.v(23): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/displaydezena.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at contadorunidade.v(32): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "jd1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "kd1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(5): created implicit net for "qd1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "jd2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "kd2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(6): created implicit net for "qd2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "jd3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "kd3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(7): created implicit net for "qd3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "jd4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "kd4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(8): created implicit net for "qd4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at flipflopdisplay.v(17): created implicit net for "t1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/flipflopdisplay.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at contadorunidademin.v(33): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidademin.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(6): created implicit net for "s0" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(7): created implicit net for "s1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(8): created implicit net for "s2" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(9): created implicit net for "s3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(13): created implicit net for "s4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(14): created implicit net for "s5" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(15): created implicit net for "s6" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(16): created implicit net for "s7" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(20): created implicit net for "s8" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(21): created implicit net for "s9" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(22): created implicit net for "s10" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(23): created implicit net for "s11" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(27): created implicit net for "s12" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(28): created implicit net for "s13" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(29): created implicit net for "s14" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplay.v(30): created implicit net for "s15" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/muxdisplay.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "q0" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "q0n" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(5): created implicit net for "rst" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "d1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "q1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at leveltopulse.v(6): created implicit net for "q1n" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at contadormatriz.v(34): created implicit net for "F1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadormatriz.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(11): created implicit net for "desenho_baixo0" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(30): created implicit net for "col0_1_2_3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at decoder_linhas_caixa.v(47): created implicit net for "desenho_erro" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v Line: 47
+Critical Warning (10846): Verilog HDL Instantiation warning at contadordezenamin.v(14): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezenamin.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(129): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 129
+Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(130): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 130
+Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(140): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 140
+Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(142): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 142
+Critical Warning (10846): Verilog HDL Instantiation warning at contador.v(144): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 144
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(8): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(5): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 5
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(6): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(7): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(8): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(9): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(10): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(11): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(12): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(13): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(14): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(15): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(16): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(17): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(18): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(19): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(20): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(21): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(22): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(23): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(24): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 24
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(25): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(26): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 26
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(27): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 27
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(28): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 28
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(34): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at clock.v(35): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 35
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(16): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(13): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(15): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(17): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(19): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at matrizleds.v(21): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(18): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at leveltopulse.v(5): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 5
+Critical Warning (10846): Verilog HDL Instantiation warning at leveltopulse.v(6): instance has no name File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/leveltopulse.v Line: 6
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "sistema_irrigacao" for hierarchy "sistema_irrigacao:comb_3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 8
-Info (12128): Elaborating entity "caixa_agua" for hierarchy "sistema_irrigacao:comb_3|caixa_agua:dut_caixa" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/sistema_irrigacao.v Line: 20
-Info (12128): Elaborating entity "irrigacao" for hierarchy "sistema_irrigacao:comb_3|irrigacao:dut_irrigacao" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/sistema_irrigacao.v Line: 31
-Info (12128): Elaborating entity "clock" for hierarchy "clock:SaidaClock" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 14
-Info (12128): Elaborating entity "flipflopt" for hierarchy "clock:SaidaClock|flipflopt:comb_3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 5
-Info (12128): Elaborating entity "flipflopd" for hierarchy "clock:SaidaClock|flipflopd:comb_51" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/clock.v Line: 34
-Info (12128): Elaborating entity "contador" for hierarchy "contador:comb_8" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 16
-Warning (10739): Verilog HDL warning at contador.v(60): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 60
-Warning (10739): Verilog HDL warning at contador.v(77): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 77
-Info (12128): Elaborating entity "contadorunidade" for hierarchy "contador:comb_8|contadorunidade:UnidadeSegundos" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 102
-Warning (10739): Verilog HDL warning at contadorunidade.v(41): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v Line: 41
-Warning (10739): Verilog HDL warning at contadorunidade.v(44): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v Line: 44
-Info (12128): Elaborating entity "flipflopjk" for hierarchy "contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidade.v Line: 49
-Info (12128): Elaborating entity "contadordezena" for hierarchy "contador:comb_8|contadordezena:DezenadeSegundos" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 105
-Warning (10739): Verilog HDL warning at contadordezena.v(13): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v Line: 13
-Warning (10739): Verilog HDL warning at contadordezena.v(16): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v Line: 16
-Warning (10739): Verilog HDL warning at contadordezena.v(31): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v Line: 31
-Warning (10739): Verilog HDL warning at contadordezena.v(34): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezena.v Line: 34
-Info (12128): Elaborating entity "contadorunidademin" for hierarchy "contador:comb_8|contadorunidademin:UnidadedeMinutos" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 108
-Warning (10739): Verilog HDL warning at contadorunidademin.v(42): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidademin.v Line: 42
-Warning (10739): Verilog HDL warning at contadorunidademin.v(45): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadorunidademin.v Line: 45
-Info (12128): Elaborating entity "contadordezenamin" for hierarchy "contador:comb_8|contadordezenamin:DezenadeMinutos" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 111
-Warning (10739): Verilog HDL warning at contadordezenamin.v(11): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezenamin.v Line: 11
-Warning (10739): Verilog HDL warning at contadordezenamin.v(12): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadordezenamin.v Line: 12
-Info (12128): Elaborating entity "muxdisplay" for hierarchy "contador:comb_8|muxdisplay:comb_76" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 140
-Info (12128): Elaborating entity "display7seg" for hierarchy "contador:comb_8|display7seg:comb_77" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 142
-Info (12128): Elaborating entity "demuxdisplay" for hierarchy "contador:comb_8|demuxdisplay:comb_78" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contador.v Line: 144
-Info (12128): Elaborating entity "matrizleds" for hierarchy "matrizleds:comb_9" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/main.v Line: 18
-Info (12128): Elaborating entity "contadormatriz" for hierarchy "matrizleds:comb_9|contadormatriz:comb_3" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 13
-Warning (10739): Verilog HDL warning at contadormatriz.v(43): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadormatriz.v Line: 43
-Warning (10739): Verilog HDL warning at contadormatriz.v(46): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/contadormatriz.v Line: 46
-Info (12128): Elaborating entity "demux1x5" for hierarchy "matrizleds:comb_9|demux1x5:comb_4" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 15
-Info (12128): Elaborating entity "decoder_linhas_irrigacao" for hierarchy "matrizleds:comb_9|decoder_linhas_irrigacao:comb_5" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 17
-Info (12128): Elaborating entity "decoder_linhas_caixa" for hierarchy "matrizleds:comb_9|decoder_linhas_caixa:comb_6" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 19
-Warning (10030): Net "desenho_erro" at decoder_linhas_caixa.v(47) has no driver or initial value, using a default initial value '0' File: C:/Users/david/OneDrive/Documentos/PBL2Flores/decoder_linhas_caixa.v Line: 47
-Info (12128): Elaborating entity "mux_linhas" for hierarchy "matrizleds:comb_9|mux_linhas:comb_7" File: C:/Users/david/OneDrive/Documentos/PBL2Flores/matrizleds.v Line: 21
+Info (12128): Elaborating entity "sistema_irrigacao" for hierarchy "sistema_irrigacao:comb_3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 8
+Info (12128): Elaborating entity "caixa_agua" for hierarchy "sistema_irrigacao:comb_3|caixa_agua:dut_caixa" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/sistema_irrigacao.v Line: 20
+Info (12128): Elaborating entity "irrigacao" for hierarchy "sistema_irrigacao:comb_3|irrigacao:dut_irrigacao" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/sistema_irrigacao.v Line: 31
+Info (12128): Elaborating entity "clock" for hierarchy "clock:SaidaClock" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 14
+Info (12128): Elaborating entity "flipflopt" for hierarchy "clock:SaidaClock|flipflopt:comb_3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 5
+Info (12128): Elaborating entity "flipflopd" for hierarchy "clock:SaidaClock|flipflopd:comb_51" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/clock.v Line: 34
+Info (12128): Elaborating entity "contador" for hierarchy "contador:comb_8" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 16
+Warning (10739): Verilog HDL warning at contador.v(60): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 60
+Warning (10739): Verilog HDL warning at contador.v(77): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 77
+Info (12128): Elaborating entity "contadorunidade" for hierarchy "contador:comb_8|contadorunidade:UnidadeSegundos" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 102
+Warning (10739): Verilog HDL warning at contadorunidade.v(41): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v Line: 41
+Warning (10739): Verilog HDL warning at contadorunidade.v(44): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v Line: 44
+Info (12128): Elaborating entity "flipflopjk" for hierarchy "contador:comb_8|contadorunidade:UnidadeSegundos|flipflopjk:Us1" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidade.v Line: 49
+Info (12128): Elaborating entity "contadordezena" for hierarchy "contador:comb_8|contadordezena:DezenadeSegundos" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 105
+Warning (10739): Verilog HDL warning at contadordezena.v(13): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v Line: 13
+Warning (10739): Verilog HDL warning at contadordezena.v(16): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v Line: 16
+Warning (10739): Verilog HDL warning at contadordezena.v(31): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v Line: 31
+Warning (10739): Verilog HDL warning at contadordezena.v(34): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezena.v Line: 34
+Info (12128): Elaborating entity "contadorunidademin" for hierarchy "contador:comb_8|contadorunidademin:UnidadedeMinutos" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 108
+Warning (10739): Verilog HDL warning at contadorunidademin.v(42): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidademin.v Line: 42
+Warning (10739): Verilog HDL warning at contadorunidademin.v(45): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadorunidademin.v Line: 45
+Info (12128): Elaborating entity "contadordezenamin" for hierarchy "contador:comb_8|contadordezenamin:DezenadeMinutos" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 111
+Warning (10739): Verilog HDL warning at contadordezenamin.v(11): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezenamin.v Line: 11
+Warning (10739): Verilog HDL warning at contadordezenamin.v(12): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadordezenamin.v Line: 12
+Info (12128): Elaborating entity "muxdisplay" for hierarchy "contador:comb_8|muxdisplay:comb_76" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 140
+Info (12128): Elaborating entity "display7seg" for hierarchy "contador:comb_8|display7seg:comb_77" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 142
+Info (12128): Elaborating entity "demuxdisplay" for hierarchy "contador:comb_8|demuxdisplay:comb_78" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contador.v Line: 144
+Info (12128): Elaborating entity "matrizleds" for hierarchy "matrizleds:comb_9" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/main.v Line: 18
+Info (12128): Elaborating entity "contadormatriz" for hierarchy "matrizleds:comb_9|contadormatriz:comb_3" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 13
+Warning (10739): Verilog HDL warning at contadormatriz.v(43): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadormatriz.v Line: 43
+Warning (10739): Verilog HDL warning at contadormatriz.v(46): actual bit length 32 differs from formal bit length 1 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/contadormatriz.v Line: 46
+Info (12128): Elaborating entity "demux1x5" for hierarchy "matrizleds:comb_9|demux1x5:comb_4" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 15
+Info (12128): Elaborating entity "decoder_linhas_irrigacao" for hierarchy "matrizleds:comb_9|decoder_linhas_irrigacao:comb_5" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 17
+Info (12128): Elaborating entity "decoder_linhas_caixa" for hierarchy "matrizleds:comb_9|decoder_linhas_caixa:comb_6" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 19
+Warning (10030): Net "desenho_erro" at decoder_linhas_caixa.v(47) has no driver or initial value, using a default initial value '0' File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/decoder_linhas_caixa.v Line: 47
+Info (12128): Elaborating entity "mux_linhas" for hierarchy "matrizleds:comb_9|mux_linhas:comb_7" File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/matrizleds.v Line: 21
 Info (13014): Ignored 8 buffer(s)
     Info (13019): Ignored 8 SOFT buffer(s)
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer sistema_irrigacao:comb_3|caixa_agua:dut_caixa|saida_erro~0 File: C:/Users/david/OneDrive/Documentos/PBL2Flores/caixa_agua.v Line: 21
+    Warning (19017): Found clock multiplexer sistema_irrigacao:comb_3|caixa_agua:dut_caixa|saida_erro~0 File: C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/caixa_agua.v Line: 21
 Warning (12241): 13 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 26 output pins
     Info (21061): Implemented 111 logic cells
-Info (144001): Generated suppressed messages file C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/main.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/main.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 158 warnings
-    Info: Peak virtual memory: 4707 megabytes
-    Info: Processing ended: Sat Jun 15 07:58:14 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Sun Jun 23 17:28:01 2024
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/david/OneDrive/Documentos/PBL2Flores/output_files/main.map.smsg.
+The suppressed messages can be found in C:/Users/david/OneDrive/Documentos/MI - Projeto de Circuitos Digitais/MI-Projeto-de-Circuitos-Digitais/Problema 2/código/output_files/main.map.smsg.
 
 

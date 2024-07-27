@@ -1,0 +1,80 @@
+module frequencia(T, clk, rst, clk1, frequencia_display, frequencia_coluna);
+    input T, clk, rst;
+    output clk1, frequencia_display, frequencia_coluna;
+    
+    flipflopT(T, !clk, Q1);
+    flipflopT(T, !Q1, Q2);
+    flipflopT(T, !Q2, Q3);
+    flipflopT(T, !Q3, Q4);
+    flipflopT(T, !Q4, Q5);
+    flipflopT(T, !Q5, Q6);
+    flipflopT(T, !Q6, Q7);
+    flipflopT(T, !Q7, Q8);
+    flipflopT(T, !Q8, Q9);
+    flipflopT(T, !Q9, Q10);
+    flipflopT(T, !Q10, frequencia_coluna);
+    flipflopT(T, !frequencia_coluna, Q12);
+    flipflopT(T, !Q12, Q13);
+    flipflopT(T, !Q13, Q14);
+    flipflopT(T, !Q14, Q15);
+    flipflopT(T, !Q15, Q16);
+    flipflopT(T, !Q16, Q17);
+    flipflopT(T, !Q17, Q18);
+    flipflopT(T, !Q18, Q19);
+    flipflopT(T, !Q19, Q20);
+    flipflopT(T, !Q20, Q21);
+    flipflopT(T, !Q21, Q22);
+    flipflopT(T, !Q22, Q23);
+    flipflopT(T, !Q23, Q24);
+    flipflopT(T,!Q24, frequencia_limpesa);
+    flipflopT(T, !frequencia_limpesa, Q25);
+	 
+	 assign frequencia_display = Q24;
+    
+    // Flip Flop D
+    wire sa, san, sb, sbn;
+    wire da, db;
+    
+    flipflopD(Q24, da, sa, san, rst);
+    flipflopD(Q24, db, sb, sbn, rst);
+    and DA(da, san, sbn);
+    and DB(db, sa);
+    or Frequencia(clk1, sa, sbn);
+    
+ 
+endmodule
+
+
+
+module flipflopD(clk, d, q, qb, rst);
+    input clk, d, rst;
+    output reg q, qb;
+    
+    always @(posedge clk)  
+   		 if (rst)  
+   		 begin
+   			 q = 1'b0;
+   			 qb = ~q;
+   		 end
+   		 else
+   		 begin  
+   			 q = d;  
+   			 qb = ~q;
+   		 end
+endmodule     
+
+
+
+
+
+module flipflopT(T, clk, Q);
+    input T, clk;
+    output reg Q;
+    
+    always @(posedge clk)
+    begin
+    if (T)
+   	 Q <= !Q;
+    end
+endmodule
+	 

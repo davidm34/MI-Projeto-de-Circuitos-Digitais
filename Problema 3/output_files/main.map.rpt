@@ -1,0 +1,1052 @@
+Analysis & Synthesis report for main
+Thu Jul 25 15:04:24 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "decoder_esvaziar:comb_116"
+ 10. Port Connectivity Checks: "main_caixa:comb_107"
+ 11. Port Connectivity Checks: "decoder_encher:comb_103"
+ 12. Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T0"
+ 13. Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T1"
+ 14. Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T2"
+ 15. Port Connectivity Checks: "main_display:comb_5|flipflopd:Contador1"
+ 16. Port Connectivity Checks: "main_display:comb_5|flipflopd:Contador0"
+ 17. Port Connectivity Checks: "main_display:comb_5|flipflopjk:comb_58"
+ 18. Port Connectivity Checks: "main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_5"
+ 19. Port Connectivity Checks: "main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_3"
+ 20. Port Connectivity Checks: "main_display:comb_5|contadordezena:DezenaSegundos|flipflopjk:SS"
+ 21. Port Connectivity Checks: "main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us4"
+ 22. Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:A"
+ 23. Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:B"
+ 24. Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:C"
+ 25. Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:D"
+ 26. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_122"
+ 27. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_121"
+ 28. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_119"
+ 29. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_118"
+ 30. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_117"
+ 31. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_88"
+ 32. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_87"
+ 33. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_86"
+ 34. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_84"
+ 35. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_83"
+ 36. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_82"
+ 37. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_53"
+ 38. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_52"
+ 39. Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_51"
+ 40. Port Connectivity Checks: "frequencia:comb_3"
+ 41. Analysis & Synthesis Messages
+ 42. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Jul 25 15:04:24 2024       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; main                                        ;
+; Top-level Entity Name       ; main                                        ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 205                                         ;
+; Total pins                  ; 31                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; main               ; main               ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
+; main.v                           ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v                 ;         ;
+; contador_coluna.v                ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v      ;         ;
+; contador_crescente.v             ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_crescente.v   ;         ;
+; contador_decrescente.v           ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_decrescente.v ;         ;
+; decoder_encher.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v       ;         ;
+; decoder_esvaziar.v               ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v     ;         ;
+; frequencia.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v           ;         ;
+; mux_linhas.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v           ;         ;
+; mux_frequencia.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_frequencia.v       ;         ;
+; main_display.v                   ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v         ;         ;
+; flipflopd.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopd.v            ;         ;
+; contadorunidade.v                ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadorunidade.v      ;         ;
+; flipflopjk.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopjk.v           ;         ;
+; contadordezena.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadordezena.v       ;         ;
+; levelToPulse.v                   ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/levelToPulse.v         ;         ;
+; demuxdisplay.v                   ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/demuxdisplay.v         ;         ;
+; muxdisplaycronometro.v           ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v ;         ;
+; estadodisplay.v                  ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/estadodisplay.v        ;         ;
+; display7segNUM.v                 ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v       ;         ;
+; main_caixa.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_caixa.v           ;         ;
+; caixa_agua.v                     ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/caixa_agua.v           ;         ;
+; irrigacao.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/irrigacao.v            ;         ;
+; flipflopT.v                      ; yes             ; User Verilog HDL File  ; /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopT.v            ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 205   ;
+;     -- Combinational with no register       ; 111   ;
+;     -- Register only                        ; 25    ;
+;     -- Combinational with a register        ; 69    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 45    ;
+;     -- 3 input functions                    ; 42    ;
+;     -- 2 input functions                    ; 62    ;
+;     -- 1 input functions                    ; 31    ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 179   ;
+;     -- arithmetic mode                      ; 26    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 10    ;
+;                                             ;       ;
+; Total registers                             ; 94    ;
+; Total logic cells in carry chains           ; 27    ;
+; I/O pins                                    ; 31    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 29    ;
+; Total fan-out                               ; 618   ;
+; Average fan-out                             ; 2.62  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                            ;
++-----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node              ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                       ; Entity Name          ; Library Name ;
++-----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+----------------------+--------------+
+; |main                                   ; 205 (68)    ; 94           ; 0          ; 31   ; 0            ; 111 (40)     ; 25 (19)           ; 69 (9)           ; 27 (27)         ; 0 (0)      ; |main                                                                     ; main                 ; work         ;
+;    |contador_crescente:comb_101|        ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|contador_crescente:comb_101                                         ; contador_crescente   ; work         ;
+;       |ff_T:ff_T0|                      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_crescente:comb_101|ff_T:ff_T0                              ; ff_T                 ; work         ;
+;       |ff_T:ff_T1|                      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_crescente:comb_101|ff_T:ff_T1                              ; ff_T                 ; work         ;
+;       |ff_T:ff_T2|                      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_crescente:comb_101|ff_T:ff_T2                              ; ff_T                 ; work         ;
+;    |contador_decrescente:comb_114|      ; 4 (0)       ; 3            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|contador_decrescente:comb_114                                       ; contador_decrescente ; work         ;
+;       |ff_1:ff_T0|                      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_decrescente:comb_114|ff_1:ff_T0                            ; ff_1                 ; work         ;
+;       |ff_1:ff_T1|                      ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_decrescente:comb_114|ff_1:ff_T1                            ; ff_1                 ; work         ;
+;       |ff_1:ff_T2|                      ; 2 (2)       ; 1            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|contador_decrescente:comb_114|ff_1:ff_T2                            ; ff_1                 ; work         ;
+;    |decoder_encher:comb_103|            ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|decoder_encher:comb_103                                             ; decoder_encher       ; work         ;
+;    |decoder_esvaziar:comb_116|          ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|decoder_esvaziar:comb_116                                           ; decoder_esvaziar     ; work         ;
+;    |frequencia:comb_3|                  ; 43 (4)      ; 39           ; 0          ; 0    ; 0            ; 4 (4)        ; 1 (0)             ; 38 (0)           ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3                                                   ; frequencia           ; work         ;
+;       |flipflopD:comb_117|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_117                                ; flipflopD            ; work         ;
+;       |flipflopD:comb_118|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_118                                ; flipflopD            ; work         ;
+;       |flipflopD:comb_119|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_119                                ; flipflopD            ; work         ;
+;       |flipflopD:comb_121|              ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_121                                ; flipflopD            ; work         ;
+;       |flipflopD:comb_122|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_122                                ; flipflopD            ; work         ;
+;       |flipflopD:comb_51|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_51                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_52|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_52                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_53|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_53                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_82|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_82                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_83|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_83                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_84|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_84                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_86|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_86                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_87|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_87                                 ; flipflopD            ; work         ;
+;       |flipflopD:comb_88|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopD:comb_88                                 ; flipflopD            ; work         ;
+;       |flipflopT:comb_11|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_11                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_13|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_13                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_15|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_15                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_17|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_17                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_19|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_19                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_21|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_21                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_23|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_23                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_25|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_25                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_27|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_27                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_29|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_29                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_31|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_31                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_33|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_33                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_35|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_35                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_37|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_37                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_39|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_39                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_3|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_3                                  ; flipflopT            ; work         ;
+;       |flipflopT:comb_41|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_41                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_43|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_43                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_45|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_45                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_47|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_47                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_49|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_49                                 ; flipflopT            ; work         ;
+;       |flipflopT:comb_5|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_5                                  ; flipflopT            ; work         ;
+;       |flipflopT:comb_7|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_7                                  ; flipflopT            ; work         ;
+;       |flipflopT:comb_9|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|frequencia:comb_3|flipflopT:comb_9                                  ; flipflopT            ; work         ;
+;    |main_caixa:comb_107|                ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_caixa:comb_107                                                 ; main_caixa           ; work         ;
+;       |caixa_agua:dut_caixa|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_caixa:comb_107|caixa_agua:dut_caixa                            ; caixa_agua           ; work         ;
+;       |irrigacao:dut_irrigacao|         ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_caixa:comb_107|irrigacao:dut_irrigacao                         ; irrigacao            ; work         ;
+;    |main_display:comb_5|                ; 62 (26)     ; 21           ; 0          ; 0    ; 0            ; 41 (26)      ; 5 (0)             ; 16 (0)           ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5                                                 ; main_display         ; work         ;
+;       |contadordezena:DezenaSegundos|   ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadordezena:DezenaSegundos                   ; contadordezena       ; work         ;
+;          |flipflopjk:SS|                ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadordezena:DezenaSegundos|flipflopjk:SS     ; flipflopjk           ; work         ;
+;          |flipflopjk:comb_5|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadordezena:DezenaSegundos|flipflopjk:comb_5 ; flipflopjk           ; work         ;
+;       |contadorunidade:UnidadeSegundos| ; 7 (1)       ; 4            ; 0          ; 0    ; 0            ; 3 (1)        ; 2 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadorunidade:UnidadeSegundos                 ; contadorunidade      ; work         ;
+;          |flipflopjk:Us1|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us1  ; flipflopjk           ; work         ;
+;          |flipflopjk:Us2|               ; 3 (3)       ; 1            ; 0          ; 0    ; 0            ; 2 (2)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us2  ; flipflopjk           ; work         ;
+;          |flipflopjk:Us3|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us3  ; flipflopjk           ; work         ;
+;          |flipflopjk:Us4|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us4  ; flipflopjk           ; work         ;
+;       |demuxdisplay:comb_61|            ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|demuxdisplay:comb_61                            ; demuxdisplay         ; work         ;
+;       |display7segNUM:comb_65|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|display7segNUM:comb_65                          ; display7segNUM       ; work         ;
+;       |flipflopd:Contador0|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|flipflopd:Contador0                             ; flipflopd            ; work         ;
+;       |flipflopd:Contador1|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|flipflopd:Contador1                             ; flipflopd            ; work         ;
+;       |flipflopd:Estado0|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|flipflopd:Estado0                               ; flipflopd            ; work         ;
+;       |flipflopd:Estado1|               ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|flipflopd:Estado1                               ; flipflopd            ; work         ;
+;       |flipflopjk:comb_58|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|flipflopjk:comb_58                              ; flipflopjk           ; work         ;
+;       |levelToPulse:comb_12|            ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_12                            ; levelToPulse         ; work         ;
+;          |flipflopd:comb_3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_3           ; flipflopd            ; work         ;
+;          |flipflopd:comb_5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_5           ; flipflopd            ; work         ;
+;       |levelToPulse:comb_41|            ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_41                            ; levelToPulse         ; work         ;
+;          |flipflopd:comb_3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_41|flipflopd:comb_3           ; flipflopd            ; work         ;
+;          |flipflopd:comb_5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_41|flipflopd:comb_5           ; flipflopd            ; work         ;
+;       |levelToPulse:comb_42|            ; 3 (1)       ; 2            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_42                            ; levelToPulse         ; work         ;
+;          |flipflopd:comb_3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_42|flipflopd:comb_3           ; flipflopd            ; work         ;
+;          |flipflopd:comb_5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_42|flipflopd:comb_5           ; flipflopd            ; work         ;
+;       |levelToPulse:comb_43|            ; 3 (1)       ; 2            ; 0          ; 0    ; 0            ; 1 (1)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_43                            ; levelToPulse         ; work         ;
+;          |flipflopd:comb_3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_43|flipflopd:comb_3           ; flipflopd            ; work         ;
+;          |flipflopd:comb_5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_43|flipflopd:comb_5           ; flipflopd            ; work         ;
+;       |levelToPulse:comb_44|            ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_44                            ; levelToPulse         ; work         ;
+;          |flipflopd:comb_3|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_44|flipflopd:comb_3           ; flipflopd            ; work         ;
+;          |flipflopd:comb_5|             ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|levelToPulse:comb_44|flipflopd:comb_5           ; flipflopd            ; work         ;
+;       |muxdisplaycronometro:comb_63|    ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|main_display:comb_5|muxdisplaycronometro:comb_63                    ; muxdisplaycronometro ; work         ;
+;    |mux_frequencia:comb_108|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_frequencia:comb_108                                             ; mux_frequencia       ; work         ;
+;    |mux_linhas:comb_118|                ; 11 (11)     ; 0            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|mux_linhas:comb_118                                                 ; mux_linhas           ; work         ;
++-----------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 94    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Load  ; 7     ;
+; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decoder_esvaziar:comb_116"                                                                                                               ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; q    ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "q[3..3]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_caixa:comb_107"                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Erro   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Alarme ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Ve     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Caixa  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decoder_encher:comb_103"                                                                                                                 ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; q    ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "q[3..3]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T0"                                                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; prst ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T1"                                                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; prst ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_crescente:comb_101|ff_T:ff_T2"                                                                                                     ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; prst ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|flipflopd:Contador1"                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; reset  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|flipflopd:Contador0"                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; reset  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|flipflopjk:comb_58"                                                                                                                                             ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; j      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; j[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; k      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; k[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
+; clear  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_5"                                                                                    ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; reset  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|levelToPulse:comb_12|flipflopd:comb_3"                                                                                    ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; reset  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|contadordezena:DezenaSegundos|flipflopjk:SS"                                                                                                                   ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; j     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; j[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; k     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; k[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main_display:comb_5|contadorunidade:UnidadeSegundos|flipflopjk:Us4" ;
++------+-------+----------+----------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                              ;
++------+-------+----------+----------------------------------------------------------------------+
+; j    ; Input ; Info     ; Stuck at VCC                                                         ;
+; k    ; Input ; Info     ; Stuck at VCC                                                         ;
++------+-------+----------+----------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:A"                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; j      ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; k      ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clear  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:B"                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clear  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:C"                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clear  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_coluna:comb_4|flipflopjk:D"                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; preset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; clear  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_122"                                                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_121"                                                                                                       ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_119"                                                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_118"                                                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_117"                                                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_88"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_87"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_86"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_84"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_83"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_82"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_53"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_52"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3|flipflopD:comb_51"                                                                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; qb   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; rst  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "frequencia:comb_3"                                                                                                                                                                 ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; T     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Jul 25 15:04:18 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: main File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_coluna.v
+    Info (12023): Found entity 1: contador_coluna File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file contador_crescente.v
+    Info (12023): Found entity 1: contador_crescente File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_crescente.v Line: 1
+    Info (12023): Found entity 2: ff_T File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_crescente.v Line: 38
+Info (12021): Found 2 design units, including 2 entities, in source file contador_decrescente.v
+    Info (12023): Found entity 1: contador_decrescente File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_decrescente.v Line: 1
+    Info (12023): Found entity 2: ff_1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_decrescente.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_encher.v
+    Info (12023): Found entity 1: decoder_encher File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_esvaziar.v
+    Info (12023): Found entity 1: decoder_esvaziar File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file frequencia.v
+    Info (12023): Found entity 1: frequencia File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 1
+    Info (12023): Found entity 2: flipflopD File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 110
+Info (12021): Found 1 design units, including 1 entities, in source file mux_linhas.v
+    Info (12023): Found entity 1: mux_linhas File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file transicao_matriz.v
+    Info (12023): Found entity 1: transicao_matriz File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/transicao_matriz.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_frequencia.v
+    Info (12023): Found entity 1: mux_frequencia File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_frequencia.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main_display.v
+    Info (12023): Found entity 1: main_display File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopd.v
+    Info (12023): Found entity 1: flipflopd File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contadorunidade.v
+    Info (12023): Found entity 1: contadorunidade File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadorunidade.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopjk.v
+    Info (12023): Found entity 1: flipflopjk File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopjk.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contadordezena.v
+    Info (12023): Found entity 1: contadordezena File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadordezena.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file levelToPulse.v
+    Info (12023): Found entity 1: levelToPulse File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/levelToPulse.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file demuxdisplay.v
+    Info (12023): Found entity 1: demuxdisplay File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/demuxdisplay.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file muxdisplaycronometro.v
+    Info (12023): Found entity 1: muxdisplaycronometro File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file estadodisplay.v
+    Info (12023): Found entity 1: estadodisplay File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/estadodisplay.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file display7segNUM.v
+    Info (12023): Found entity 1: display7segNUM File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main_caixa.v
+    Info (12023): Found entity 1: main_caixa File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_caixa.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file caixa_agua.v
+    Info (12023): Found entity 1: caixa_agua File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/caixa_agua.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file irrigacao.v
+    Info (12023): Found entity 1: irrigacao File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/irrigacao.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flipflopT.v
+    Info (12023): Found entity 1: flipflopT File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/flipflopT.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at main.v(18): created implicit net for "frequencia_display" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at main.v(18): created implicit net for "frequencia_coluna" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at main.v(18): created implicit net for "f_arpersao" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at main.v(18): created implicit net for "frequencia2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at main.v(23): created implicit net for "Gotejamento" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at main.v(23): created implicit net for "Aspersao" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at main.v(40): created implicit net for "linha_vazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at main.v(46): created implicit net for "Erro" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at main.v(46): created implicit net for "Alarme" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at main.v(46): created implicit net for "Ve" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at main.v(46): created implicit net for "Caixa" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at main.v(51): created implicit net for "linha_cheia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at main.v(60): created implicit net for "seletor" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 60
+Warning (10236): Verilog HDL Implicit Net warning at contador_coluna.v(41): created implicit net for "F1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(8): created implicit net for "cont0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(9): created implicit net for "linha1_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(10): created implicit net for "cont0_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(15): created implicit net for "linha2_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(17): created implicit net for "cont1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(18): created implicit net for "linha2_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(19): created implicit net for "cont1_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(20): created implicit net for "saida_ligada1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(25): created implicit net for "linha3_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(29): created implicit net for "cont2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(30): created implicit net for "linha3_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(31): created implicit net for "cont2_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 31
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(32): created implicit net for "saida_ligada2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(37): created implicit net for "s1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(38): created implicit net for "s2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(39): created implicit net for "linha4_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(42): created implicit net for "cont3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 42
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(43): created implicit net for "linha4_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(44): created implicit net for "cont3_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(45): created implicit net for "saida_ligada3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(49): created implicit net for "linha5_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(53): created implicit net for "cont4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 53
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(55): created implicit net for "linha5_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(56): created implicit net for "cont4_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(57): created implicit net for "saida_ligada4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(62): created implicit net for "s7" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(63): created implicit net for "linha6_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(66): created implicit net for "cont5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(67): created implicit net for "linha6_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 67
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(68): created implicit net for "cont5_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 68
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(69): created implicit net for "saida_ligada5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 69
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(73): created implicit net for "saida7_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 73
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(76): created implicit net for "cont6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 76
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(77): created implicit net for "linha7_enche" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 77
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(78): created implicit net for "cont6_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 78
+Warning (10236): Verilog HDL Implicit Net warning at decoder_encher.v(79): created implicit net for "saida_ligada6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 79
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(8): created implicit net for "cont6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(9): created implicit net for "linha0_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(10): created implicit net for "cont6_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(15): created implicit net for "linha1_desligada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(16): created implicit net for "cont5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(17): created implicit net for "linha1_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(23): created implicit net for "s1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(24): created implicit net for "linha2_desligada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(26): created implicit net for "cont4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(27): created implicit net for "linha2_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(33): created implicit net for "cont3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(34): created implicit net for "linha3_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(35): created implicit net for "cont3_n" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(39): created implicit net for "s3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(40): created implicit net for "s4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(41): created implicit net for "linha4_deligada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 41
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(43): created implicit net for "cont2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(44): created implicit net for "linha4_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(49): created implicit net for "linha5_desligada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(50): created implicit net for "cont1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(51): created implicit net for "linha5_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(57): created implicit net for "linha6_apagada" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(58): created implicit net for "cont0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at decoder_esvaziar.v(59): created implicit net for "linha6_esvazia" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(5): created implicit net for "Q1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(6): created implicit net for "Q2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(7): created implicit net for "Q3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(8): created implicit net for "Q4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(9): created implicit net for "Q5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(10): created implicit net for "Q6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(11): created implicit net for "Q7" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(12): created implicit net for "Q8" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(13): created implicit net for "Q9" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(14): created implicit net for "Q10" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(16): created implicit net for "Q12" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(17): created implicit net for "Q13" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(18): created implicit net for "Q14" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(19): created implicit net for "Q15" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(20): created implicit net for "Q16" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(22): created implicit net for "Q18" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(23): created implicit net for "Q19" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(24): created implicit net for "Q20" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(25): created implicit net for "Q21" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(27): created implicit net for "Q23" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(28): created implicit net for "Q24" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(32): created implicit net for "P0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(32): created implicit net for "G0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(33): created implicit net for "P1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(33): created implicit net for "G1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(34): created implicit net for "P2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(34): created implicit net for "G2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(45): created implicit net for "f_quase" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(49): created implicit net for "J0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(52): created implicit net for "J1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 52
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(55): created implicit net for "J2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(57): created implicit net for "H0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(58): created implicit net for "H1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(59): created implicit net for "H2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(65): created implicit net for "Z0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(65): created implicit net for "C0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(66): created implicit net for "Z1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(66): created implicit net for "C1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(67): created implicit net for "Z2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 67
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(67): created implicit net for "C2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 67
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(78): created implicit net for "f_quaseA" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 78
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(82): created implicit net for "Y0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 82
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(85): created implicit net for "Y1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 85
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(88): created implicit net for "Y2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 88
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(90): created implicit net for "R0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 90
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(91): created implicit net for "R1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 91
+Warning (10236): Verilog HDL Implicit Net warning at frequencia.v(92): created implicit net for "R2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 92
+Warning (10236): Verilog HDL Implicit Net warning at mux_frequencia.v(7): created implicit net for "s1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_frequencia.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at mux_frequencia.v(8): created implicit net for "s2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_frequencia.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(33): created implicit net for "saidazerada0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(34): created implicit net for "saidazerada1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(36): created implicit net for "W0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 36
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(37): created implicit net for "W" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 37
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(56): created implicit net for "pulseLevelAgro" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(89): created implicit net for "al" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 89
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(90): created implicit net for "an" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 90
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(94): created implicit net for "bl" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 94
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(95): created implicit net for "bn" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 95
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(99): created implicit net for "cl" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 99
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(100): created implicit net for "cn" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 100
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(104): created implicit net for "dl" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 104
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(105): created implicit net for "dn" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 105
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(109): created implicit net for "el" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 109
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(110): created implicit net for "en" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 110
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(114): created implicit net for "fl" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 114
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(115): created implicit net for "fn" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 115
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(119): created implicit net for "gl" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 119
+Warning (10236): Verilog HDL Implicit Net warning at main_display.v(120): created implicit net for "gn" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 120
+Warning (10236): Verilog HDL Implicit Net warning at contadorunidade.v(32): created implicit net for "F1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadorunidade.v Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(6): created implicit net for "s2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(7): created implicit net for "s3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(8): created implicit net for "s0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(8): created implicit net for "s1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(11): created implicit net for "s6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(12): created implicit net for "s7" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(13): created implicit net for "s4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(13): created implicit net for "s5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(16): created implicit net for "s10" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(17): created implicit net for "s11" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(18): created implicit net for "s8" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(18): created implicit net for "s9" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(21): created implicit net for "s14" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(22): created implicit net for "s15" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 22
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(23): created implicit net for "s12" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at muxdisplaycronometro.v(23): created implicit net for "s13" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(7): created implicit net for "s1" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(10): created implicit net for "s2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(13): created implicit net for "s3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(21): created implicit net for "s4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(24): created implicit net for "s5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(27): created implicit net for "s6" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(40): created implicit net for "s7" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(43): created implicit net for "s8" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(46): created implicit net for "s9" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 46
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(54): created implicit net for "s10" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(62): created implicit net for "s11" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 62
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(65): created implicit net for "s12" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(68): created implicit net for "s13" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 68
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(76): created implicit net for "s14" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 76
+Warning (10236): Verilog HDL Implicit Net warning at display7segNUM.v(79): created implicit net for "s15" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/display7segNUM.v Line: 79
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(5): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 5
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(6): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(7): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(8): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(9): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(10): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(11): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(12): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(13): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(14): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(15): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(16): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(17): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(18): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(19): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(20): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(21): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(22): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(23): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(24): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 24
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(25): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(26): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 26
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(27): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 27
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(28): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 28
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(32): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(33): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 33
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(34): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(57): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 57
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(58): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 58
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(59): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 59
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(65): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 65
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(66): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 66
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(67): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 67
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(90): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 90
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(91): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 91
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(92): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 92
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(100): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 100
+Critical Warning (10846): Verilog HDL Instantiation warning at frequencia.v(101): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 101
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(18): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(21): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at contadordezena.v(15): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadordezena.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at levelToPulse.v(7): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/levelToPulse.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at levelToPulse.v(11): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/levelToPulse.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(37): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 37
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(42): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 42
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(43): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 43
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(44): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 44
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(45): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 45
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(56): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 56
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(65): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 65
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(76): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 76
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(82): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 82
+Critical Warning (10846): Verilog HDL Instantiation warning at main_display.v(84): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 84
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(23): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(40): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 40
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(41): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 41
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(46): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(49): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 49
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(54): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 54
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(55): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 55
+Critical Warning (10846): Verilog HDL Instantiation warning at main.v(61): instance has no name File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 61
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at main.v(33): truncated value with size 32 to match size of target (27) File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 33
+Warning (10739): Verilog HDL warning at main.v(60): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 60
+Info (12128): Elaborating entity "frequencia" for hierarchy "frequencia:comb_3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 18
+Info (12128): Elaborating entity "flipflopT" for hierarchy "frequencia:comb_3|flipflopT:comb_3" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 5
+Info (12128): Elaborating entity "flipflopD" for hierarchy "frequencia:comb_3|flipflopD:comb_51" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 32
+Info (12128): Elaborating entity "contador_coluna" for hierarchy "contador_coluna:comb_4" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 21
+Warning (10739): Verilog HDL warning at contador_coluna.v(50): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 50
+Warning (10739): Verilog HDL warning at contador_coluna.v(53): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 53
+Info (12128): Elaborating entity "flipflopjk" for hierarchy "contador_coluna:comb_4|flipflopjk:D" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 16
+Info (12128): Elaborating entity "main_display" for hierarchy "main_display:comb_5" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 23
+Info (12128): Elaborating entity "flipflopd" for hierarchy "main_display:comb_5|flipflopd:Estado0" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 24
+Info (12128): Elaborating entity "contadorunidade" for hierarchy "main_display:comb_5|contadorunidade:UnidadeSegundos" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 33
+Warning (10739): Verilog HDL warning at contadorunidade.v(41): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadorunidade.v Line: 41
+Warning (10739): Verilog HDL warning at contadorunidade.v(44): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadorunidade.v Line: 44
+Info (12128): Elaborating entity "contadordezena" for hierarchy "main_display:comb_5|contadordezena:DezenaSegundos" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 34
+Warning (10739): Verilog HDL warning at contadordezena.v(12): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadordezena.v Line: 12
+Warning (10739): Verilog HDL warning at contadordezena.v(13): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contadordezena.v Line: 13
+Info (12128): Elaborating entity "levelToPulse" for hierarchy "main_display:comb_5|levelToPulse:comb_12" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 37
+Info (12128): Elaborating entity "demuxdisplay" for hierarchy "main_display:comb_5|demuxdisplay:comb_61" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 65
+Info (12128): Elaborating entity "muxdisplaycronometro" for hierarchy "main_display:comb_5|muxdisplaycronometro:comb_63" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 76
+Warning (10030): Net "s0" at muxdisplaycronometro.v(8) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 8
+Warning (10030): Net "s1" at muxdisplaycronometro.v(8) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 8
+Warning (10030): Net "s4" at muxdisplaycronometro.v(13) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 13
+Warning (10030): Net "s5" at muxdisplaycronometro.v(13) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 13
+Warning (10030): Net "s8" at muxdisplaycronometro.v(18) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 18
+Warning (10030): Net "s9" at muxdisplaycronometro.v(18) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 18
+Warning (10030): Net "s12" at muxdisplaycronometro.v(23) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 23
+Warning (10030): Net "s13" at muxdisplaycronometro.v(23) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/muxdisplaycronometro.v Line: 23
+Info (12128): Elaborating entity "estadodisplay" for hierarchy "main_display:comb_5|estadodisplay:comb_64" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 82
+Info (12128): Elaborating entity "display7segNUM" for hierarchy "main_display:comb_5|display7segNUM:comb_65" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_display.v Line: 84
+Info (12128): Elaborating entity "contador_crescente" for hierarchy "contador_crescente:comb_101" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 40
+Info (12128): Elaborating entity "ff_T" for hierarchy "contador_crescente:comb_101|ff_T:ff_T2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_crescente.v Line: 27
+Info (12128): Elaborating entity "decoder_encher" for hierarchy "decoder_encher:comb_103" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 41
+Warning (10739): Verilog HDL warning at decoder_encher.v(15): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 15
+Warning (10739): Verilog HDL warning at decoder_encher.v(49): actual bit length 32 differs from formal bit length 1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_encher.v Line: 49
+Info (12128): Elaborating entity "main_caixa" for hierarchy "main_caixa:comb_107" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 46
+Info (12128): Elaborating entity "caixa_agua" for hierarchy "main_caixa:comb_107|caixa_agua:dut_caixa" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_caixa.v Line: 18
+Info (12128): Elaborating entity "irrigacao" for hierarchy "main_caixa:comb_107|irrigacao:dut_irrigacao" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main_caixa.v Line: 29
+Info (12128): Elaborating entity "mux_frequencia" for hierarchy "mux_frequencia:comb_108" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 49
+Info (12128): Elaborating entity "contador_decrescente" for hierarchy "contador_decrescente:comb_114" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 54
+Info (12128): Elaborating entity "ff_1" for hierarchy "contador_decrescente:comb_114|ff_1:ff_T2" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_decrescente.v Line: 27
+Info (12128): Elaborating entity "decoder_esvaziar" for hierarchy "decoder_esvaziar:comb_116" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 55
+Warning (10030): Net "cont3_n" at decoder_esvaziar.v(35) has no driver or initial value, using a default initial value '0' File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/decoder_esvaziar.v Line: 35
+Info (12128): Elaborating entity "mux_linhas" for hierarchy "mux_linhas:comb_118" File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 61
+Info (13014): Ignored 3 buffer(s)
+    Info (13019): Ignored 3 SOFT buffer(s)
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer main_caixa:comb_107|caixa_agua:dut_caixa|saida_erro~0 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/caixa_agua.v Line: 21
+    Warning (19017): Found clock multiplexer mux_linhas:comb_118|l[4]~0 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v Line: 4
+    Warning (19017): Found clock multiplexer mux_linhas:comb_118|l[3]~1 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v Line: 4
+    Warning (19017): Found clock multiplexer mux_linhas:comb_118|l[1]~2 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v Line: 4
+    Warning (19017): Found clock multiplexer mux_linhas:comb_118|l[0]~3 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_linhas.v Line: 4
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer mux_frequencia:comb_108|frequencia_atual~0 File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/mux_frequencia.v Line: 4
+Warning (12241): 30 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "col[0]" is stuck at VCC File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 8
+    Warning (13410): Pin "col[1]" is stuck at VCC File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 8
+    Warning (13410): Pin "col[2]" is stuck at VCC File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 8
+    Warning (13410): Pin "col[3]" is stuck at VCC File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 8
+    Warning (13410): Pin "col[4]" is stuck at VCC File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/main.v Line: 8
+Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 205 logic cells
+Info (144001): Generated suppressed messages file /home/aluno/Downloads/novo_pbl22/novo_pbl2/output_files/main.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 270 warnings
+    Info: Peak virtual memory: 340 megabytes
+    Info: Processing ended: Thu Jul 25 15:04:24 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/aluno/Downloads/novo_pbl22/novo_pbl2/output_files/main.map.smsg.
+
+

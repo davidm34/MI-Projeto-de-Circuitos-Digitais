@@ -1,0 +1,33 @@
+module main (T,clk ,l , col, q,q_n, clr);
+
+    input clr,clk, T;
+    output [6:0] l; 
+	 wire [6:0] linha_esvaziar;
+	 wire [6:0] linha_encher; 
+    output [4:0]col;
+    output [2:0] q;
+	 output [2:0] q_n;
+ 
+    wire frequenciapiscar, frequencia_esvasiar;
+
+    // varredura das colunas
+    contador_coluna(col ,T, clk);
+	 //demux_encher(1,l,q);
+	 
+	
+    // varredura das linhas 
+	 
+    // enchimento 
+    contador_crescente(clk,clr,T, q, frequenciapiscar);
+    decoder_encemento(q,frequenciapiscar, linha_encher);
+	 
+    // esvaziamento 
+    //mux_frequencia(T,clk,temperatura, umidade_ar, umidade_solo, q, q_n, frequencia_esvasiar);
+    contador_decrescente(frequencia_esvasiar,clr, q_n);
+    decoder_esvaziar(q_n, frequenciapiscar, linha_esvaziar); 
+	 
+	 // seleciona desencer ou encher 
+	 and (seletor, q[2], q[1], !q[0]);
+	 mux_linhas(l, linha_encher,linha_esvaziar,seletor );
+
+endmodule 

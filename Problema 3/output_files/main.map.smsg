@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at contador_coluna.v(11): object "jd" differs only in case from object "JD" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 11
+Info (10281): Verilog HDL Declaration information at contador_coluna.v(11): object "jc" differs only in case from object "JC" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 11
+Info (10281): Verilog HDL Declaration information at contador_coluna.v(12): object "kc" differs only in case from object "KC" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 12
+Info (10281): Verilog HDL Declaration information at contador_coluna.v(11): object "jb" differs only in case from object "JB" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/contador_coluna.v Line: 11
+Info (10281): Verilog HDL Declaration information at frequencia.v(98): object "da" differs only in case from object "DA" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 98
+Info (10281): Verilog HDL Declaration information at frequencia.v(98): object "db" differs only in case from object "DB" in the same scope File: /home/aluno/Downloads/novo_pbl22/novo_pbl2/frequencia.v Line: 98

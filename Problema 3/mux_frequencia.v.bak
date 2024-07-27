@@ -1,0 +1,19 @@
+module mux_frequecia(frequencia_gotejamento, frequencia_aspersao, temperatura, umidade_ar, umidade_solo, frequencia_atual, q_n);
+
+	input frequencia_gotejamento, frequencia_aspersao, temperatura, umidade_ar, umidade_solo;
+	input [2:0]q_n;
+	output frequencia_atual;
+	
+	and (aspersao, umidade_solo, !umidade_ar);
+	and (gotejamento,  umidade_solo, umidade_ar, temperatura);
+	and (asper_gote, umidade_solo, umidade_ar, !temperatura);
+	
+	
+	and (s1, aspersao, frequencia_aspersao);
+	and (s2, gotejamento, frequencia_gotejamento);
+	and (s3, !q_n[2], asper_gote, frequencia_aspersao);
+	and (s4, q_n[2],  asper_gote, frequencia_gotejamento);
+	
+	or(frequencia_atual, s1,s2,s3,s4);
+	
+	
